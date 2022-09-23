@@ -1,0 +1,118 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  background-color: azure;
+}
+
+.headerBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: goldenrod;
+  width: 100vw;
+  position: fixed;
+
+}
+
+#headText {
+  font-family: 'Alfa Slab One', cursive;
+  padding-left: 30px;
+
+}
+
+#nav-bar{
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.nav-link {
+
+  width: 65x;
+  height: 55px;
+  padding-left: 15px;
+  padding-right: 15px;;
+
+}
+
+footer {
+  font-size: 20px;
+}
+
+
+.topPage {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 200px;
+  margin-left: 15px;
+}
+
+
+@media (min-width: 550px) {
+ nav > .fa-basketball {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .hidden--mobile {
+    display: none;
+  }
+  #navigation {
+    position: fixed;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: goldenrod;
+    right: 0;
+    top: 70px;
+
+  }
+   .nav-link {
+    margin: 16px 0;
+   }
+
+}
+
+.fas {
+  margin-top: 27px;
+}
+
+.rank {
+  height: 300px;
+  width: 300px;
+  margin-left: 15px;;
+}
+
+.playerHeads {
+  height: 85px;
+  width: 85px;
+  border: 1px solid blue;
+}
+
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.placeHolder {
+  border: 1px solid red;
+  height: 85px;
+  width: 85px;
+}
+
+.hide {
+  opacity: .75;
+}
+
+.rankFeature {
+  margin-top: 100px;
+  margin-left: 500px;
+}
+
