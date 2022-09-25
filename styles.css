@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* border: 1px solid black; */
 
 }
 
@@ -12,34 +13,42 @@ body {
 .headerBar {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  background-color: goldenrod;
+  background-color: #FBC403;
   width: 100vw;
-  position: fixed;
 
 }
 
-#headText {
+a {
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* Goat Takes */
+header {
   font-family: 'Alfa Slab One', cursive;
-  padding-left: 30px;
+  padding-left: 10px;
+  background-color: #FBC403;
+  margin-bottom: -25px;
+  margin-top: -22px;
+  width: 100vw;
+  padding-top: 5px;
+
+
 
 }
+
 
 #nav-bar{
   flex-direction: row;
   flex-wrap: nowrap;
   padding: 15px;
-  justify-content: space-between;
-}
-
-.nav-link {
-
-  width: 65x;
-  height: 55px;
-  padding-left: 15px;
-  padding-right: 15px;;
+  justify-content: end;
+  font-size: 20px;
+  text-decoration: none;
+  outline: none;
 
 }
+
 
 footer {
   font-size: 20px;
@@ -64,23 +73,22 @@ footer {
   .hidden--mobile {
     display: none;
   }
+
   #navigation {
-    position: fixed;
-    flex-direction: column;
     flex-wrap: wrap;
-    background-color: goldenrod;
+    background-color: #FBC403;
     right: 0;
     top: 70px;
 
   }
-   .nav-link {
-    margin: 16px 0;
-   }
 
 }
 
 .fas {
-  margin-top: 27px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 30px;
 }
 
 .rank {
@@ -116,3 +124,64 @@ img {
   margin-left: 500px;
 }
 
+article {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 8in) 1fr;
+  height: 100vh;
+
+}
+
+article * {
+  grid-column: 2 / 3;
+}
+
+article > * {
+  display: flex;
+  justify-content: center;
+}
+
+.posts {
+  border: 1px black solid;
+  margin: 3rem;
+  border-radius:  20px;
+  box-shadow: 7px 7px 6px 8px grey;
+  background-color: white;
+}
+
+input {
+  display: block;
+  border-radius: 0 15px 15px 0;
+  margin: 0 auto;
+}
+
+table {
+  border-radius: 0 15px 15px 0;
+  height: 50vh;
+  width: 30vw;
+  border: 1px solid black;
+}
+.playerOne, .playerTwo {
+  margin: 0 auto;
+}
+
+.comparePlayers {
+  display: flex;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+.trending {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 25px;
+  /* border: 1px solid black; */
+}
+
+.trending > div {
+  border: 1px solid black;
+  height: 15vh;
+  width: 15vw;
+}

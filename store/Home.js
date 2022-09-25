@@ -1,4 +1,4 @@
 export default {
-  header: "Welcome",
+  header: "Goat Takes",
   view: "Home"
 };
