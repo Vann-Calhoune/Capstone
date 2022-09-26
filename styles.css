@@ -7,9 +7,12 @@
 }
 
 body {
-  background-color: azure;
+  background-color: #FFFAF0;
 }
 
+
+
+/* start nav */
 .headerBar {
   display: flex;
   flex-direction: row;
@@ -23,7 +26,7 @@ a {
   text-decoration: none;
 }
 
-/* Goat Takes */
+
 header {
   font-family: 'Alfa Slab One', cursive;
   padding-left: 10px;
@@ -32,7 +35,6 @@ header {
   margin-top: -22px;
   width: 100vw;
   padding-top: 5px;
-
 
 
 }
@@ -49,60 +51,50 @@ header {
 
 }
 
+@media (min-width: 550px) {
+  nav > .fa-basketball {
+     display: none;
+   }
+
+}
+ @media (max-width: 550px) {
+   .hidden--mobile {
+     display: none;
+   }
+
+   #navigation {
+    flex-direction: column;
+     background-color: #FBC403;
+     right: 0;
+     top: 70px;
+   }
+
+ }
+
+
+ .fas {
+   margin-top: 10px;
+   margin-bottom: 10px;
+   position: absolute;
+   top: 30px;
+ }
+
+ .fas:hover {
+  cursor: pointer;
+ }
+/* end nav */
 
 footer {
   font-size: 20px;
 }
 
 
-.topPage {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-top: 200px;
-  margin-left: 15px;
-}
-
-
-@media (min-width: 550px) {
- nav > .fa-basketball {
-    display: none;
-  }
-}
-
-@media (max-width: 550px) {
-  .hidden--mobile {
-    display: none;
-  }
-
-  #navigation {
-    flex-wrap: wrap;
-    background-color: #FBC403;
-    right: 0;
-    top: 70px;
-
-  }
-
-}
-
-.fas {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  position: absolute;
-  top: 30px;
-}
-
-.rank {
-  height: 300px;
-  width: 300px;
-  margin-left: 15px;;
-}
-
+/* rank */
 .playerHeads {
   height: 85px;
   width: 85px;
   border: 1px solid blue;
 }
-
 
 img {
   max-width: 100%;
@@ -123,31 +115,79 @@ img {
   margin-top: 100px;
   margin-left: 500px;
 }
+/* end rank */
 
-article {
-  display: grid;
-  grid-template-columns: 1fr minmax(0, 8in) 1fr;
-  height: 100vh;
+/* start home */
 
-}
 
-article * {
-  grid-column: 2 / 3;
-}
-
-article > * {
-  display: flex;
-  justify-content: center;
+main, aside, footer {
+  border: 1px solid black;
+padding: 5px;
+margin: 5px;
+/* background-color: rgba(255, 0, 0, 30%); */
 }
 
 .posts {
-  border: 1px black solid;
-  margin: 3rem;
-  border-radius:  20px;
-  box-shadow: 7px 7px 6px 8px grey;
+  /* border: 1px red solid; */
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius:  20px ;
+  box-shadow: 3px 3px 3px 3px grey;
   background-color: white;
+   max-width: 322px;
+  max-height: 430px;
+  justify-content: center;
+
 }
 
+.blog {
+  display: grid;
+  height: 100vh;
+
+  overflow: scroll;
+  grid-template-columns: 1fr;
+  grid-template-areas: "main"
+                        "sidebar";
+}
+
+@media (min-width: 550px) {
+  .blog { grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "main main main sidebar"
+                          "main main main sidebar";}
+}
+
+.postImage {
+  max-height: 300px;
+  max-width: 300px;
+  align-items: center;
+  border-radius: 20px 20px 0 0;
+
+
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* end Home */
+
+/* start compare */
 input {
   display: block;
   border-radius: 0 15px 15px 0;
@@ -172,16 +212,20 @@ table, th, td {
   border: 1px solid;
 }
 
-.trending {
+/* end Compare */
+
+.articles {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin: 25px;
-  /* border: 1px solid black; */
+  flex-wrap: wrap;
+  overflow: auto;
+  flex: 1;
+  min-height: 0;
+
 }
 
-.trending > div {
-  border: 1px solid black;
-  height: 15vh;
-  width: 15vw;
+@media (max-width: 700px) {
+  .blog {
+    height: 100%;
+  }
 }
