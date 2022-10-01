@@ -24,6 +24,12 @@ body {
 a {
   margin-left: 15px;
   text-decoration: none;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 1px 1px 1px 1px black;
+  color: black;
+
 }
 
 
@@ -34,7 +40,7 @@ header {
   margin-bottom: -25px;
   margin-top: -22px;
   width: 100vw;
-  padding-top: 5px;
+  padding-top: 10px;
 
 
 }
@@ -64,17 +70,16 @@ header {
 
    #navigation {
     flex-direction: column;
-     background-color: #FBC403;
+     /* background-color: #FBC403; */
      right: 0;
      top: 70px;
+
    }
 
  }
 
 
  .fas {
-   margin-top: 10px;
-   margin-bottom: 10px;
    position: absolute;
    top: 30px;
  }
@@ -111,9 +116,30 @@ img {
   opacity: .75;
 }
 
-.rankFeature {
-  margin-top: 100px;
-  margin-left: 500px;
+.rankContent {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.rankContent {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+}
+
+.rankSpace {
+  border: 1px solid black;
+  height: 90vh;
+  width: 70vw;
+
+}
+
+.playerSpace {
+  border: 1px solid black;
+  height: 90vh;
+  width: 30vw;
 }
 /* end rank */
 
@@ -121,24 +147,23 @@ img {
 
 
 main, aside, footer {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 padding: 5px;
 margin: 5px;
-/* background-color: rgba(255, 0, 0, 30%); */
 }
 
 .posts {
   /* border: 1px red solid; */
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 1.5rem;
   padding: 1rem;
   border-radius:  20px ;
   box-shadow: 3px 3px 3px 3px grey;
   background-color: white;
-   max-width: 322px;
+   max-width: 300px;
   max-height: 430px;
-  justify-content: center;
+
 
 }
 
@@ -161,8 +186,8 @@ margin: 5px;
 .postImage {
   max-height: 300px;
   max-width: 300px;
-  align-items: center;
   border-radius: 20px 20px 0 0;
+
 
 
 }
@@ -182,8 +207,16 @@ footer {
 .trending {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content:flex-start;
+
 }
+
+.trending > div {
+  /* border: 1px solid black; */
+
+  width: 100%;
+}
+
 
 /* end Home */
 

@@ -24,24 +24,23 @@ function afterRender(state) {
   document.querySelector(".fa-basketball").addEventListener("click", () => {
     document.querySelector("#navigation").classList.toggle("hidden--mobile");
   });
-
-  const source = document.querySelector(".playerHeads");
-  const target = document.querySelector(".placeHolder");
-
-  source.addEventListener("dragstart", e => {
-    e.dataTransfer.setData("text/plain", e.target.id);
-  });
-
-  target.addEventListener("dragover", e => {
-    e.preventDefault();
-  });
-
-  target.addEventListener("drop", e => {
-    e.preventDefault();
-    const sourceID = e.dataTransfer.getData("text/plain");
-    e.target.appendChild(document.getElementById(sourceID));
-  });
 }
+
+const axios = require("axios");
+
+const options = {
+  method: "GET",
+  url: "https://www.balldontlie.io/api/v1/season_averages?player_ids[]=237"
+};
+
+axios
+  .request(options)
+  .then(function(response) {
+    console.log(response.data);
+  })
+  .catch(function(error) {
+    console.error(error);
+  });
 
 router
   .on({
