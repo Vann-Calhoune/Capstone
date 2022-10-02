@@ -4,8 +4,10 @@ export default state =>
   html`
     <div class="comparePlayers">
       <div class="playerOne">
-        <input type="text" id="search1" placeholder="Player 1" />
-        <input type="submit" value="Submit" />
+        <form id="form1">
+          <input type="text" id="search1" placeholder="Player 1" />
+          <input id="submit1" type="submit" value="Submit" />
+        </form>
         <br />
         <table>
           <tr>
@@ -43,8 +45,10 @@ export default state =>
         </table>
       </div>
       <div class="playerTwo">
-        <input type="text" id="search2" placeholder="Player 2" />
-        <input type="submit" value="Submit" />
+        <form id="form2">
+          <input type="text" id="search2" placeholder="Player 2" />
+          <input type="submit" value="Submit" />
+        </form>
         <br />
         <table>
           <tr>

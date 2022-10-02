@@ -1,5 +1,6 @@
 export default {
   header: "Compare Players",
   view: "Compare",
-  stats1: {}
+  stats1: {},
+  nameVariable: ""
 };
