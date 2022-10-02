@@ -78,6 +78,14 @@ header {
 
  }
 
+#div1, #drag1 {
+  border: 1px solid black;
+  height: 60px;
+  width: 60px;
+
+}
+
+
 
  .fas {
    position: absolute;
@@ -85,6 +93,10 @@ header {
  }
 
  .fas:hover {
+  cursor: pointer;
+ }
+
+ a:hover {
   cursor: pointer;
  }
 /* end nav */

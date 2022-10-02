@@ -1,4 +1,5 @@
 export default {
   header: "Compare Players",
-  view: "Compare"
+  view: "Compare",
+  stats1: {}
 };

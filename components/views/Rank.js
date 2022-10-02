@@ -4,7 +4,14 @@ export default state =>
   html`
     <div class="rankContent">
       <div class="rankSpace">
-        <div><span>1</span></div>
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <img
+          id="drag1"
+          src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png"
+          draggable="true"
+          ondragstart="drag(event)"
+        />
+        <div></div>
         <div><span>2</span></div>
         <div><span>3</span></div>
         <div><span>4</span></div>
