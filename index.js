@@ -27,17 +27,18 @@ function afterRender(state) {
   });
 }
 
-// let playerId = axios
-//   .get("https://www.balldontlie.io/api/v1/players/237")
-//   .then(response => {
-//     console.log(response.data);
-//   })
-//   .catch(err => {
-//     console.log(err);
-//     document();
-//   });
+let playerId = axios
+  .get("https://www.balldontlie.io/api/v1/players/")
+  .then(response => {
+    let playerList = response.data.data;
+    console.log(playerList);
+  })
+  .catch(err => {
+    console.log(err);
+    document();
+  });
 
-axios
+let playerStats = axios
   .get("https://www.balldontlie.io/api/v1/season_averages?player_ids[]=237")
   .then(response => {
     store.Compare.stats1 = {};
@@ -54,16 +55,6 @@ axios
     console.log(err);
     document();
   });
-
-// let playerPts = axios
-//   .get("https://www.balldontlie.io/api/v1/season_averages?player_ids[]=237")
-//   .then(response => {
-//     console.log(response.data.data[0].pts);
-//   })
-//   .catch(err => {
-//     console.log(err);
-//     document();
-//   });
 
 router
   .on({
