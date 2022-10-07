@@ -36,21 +36,18 @@ function afterRender(state) {
 
   function handleOverDrop(e) {
     e.preventDefault();
-    //function exits if no "drop"
-    if (e.type != "drop") {
-      return;
-    }
 
     //Stores dragged elements ID and then the reference to dragged element
     let draggedId = e.dataTransfer.getData("text");
 
     let refEl = document.getElementById(draggedId);
 
-    //if "drop" occurs in different div detach element from current div, append to new div, remove style.
+    //if "drop" occurs in different div detach element from current div, append to new div
     refEl.parentNode.removeChild(refEl);
     e.target.appendChild(refEl);
   }
 
+  // variables for players and drop
   let draggable = document.querySelectorAll(".playerDrag");
   let targets = document.querySelectorAll(".dropTarget");
 
@@ -78,7 +75,7 @@ function afterRender(state) {
     //if user input value = player id, show player
     images.forEach(filter => {
       let playerName = filter.getAttribute("id");
-      if (value == playerName) {
+      if (playerName.includes(value)) {
         filter.style.display = "block";
       }
       //If you delete search block all players display

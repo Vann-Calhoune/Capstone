@@ -1,4 +1,16 @@
 import html from "html-literal";
+import michael from "../../assets/images/mjHeads.png";
+import larry from "../../assets/images/larry33.png";
+import kareem from "../../assets/images/kareem.png";
+import wilt from "../../assets/images/wilt.png";
+import gia from "../../assets/images/giaHead.png";
+import kevin from "../../assets/images/kevinHead.png";
+import kobe from "../../assets/images/kobeHead.png";
+import lebron from "../../assets/images/lebronHead.png";
+import magic from "../../assets/images/magicHead.png";
+import steph from "../../assets/images/stephHead.png";
+import tim from "../../assets/images/timHead.png";
+import wade from "../../assets/images/wadeHead.png";
 
 export default state =>
   html`
@@ -14,101 +26,109 @@ export default state =>
           <li>
             <img
               id="lebron"
-              src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png"
+              src="${lebron}"
               draggable="true"
               class="playerDrag"
-              title="lebron James"
+              title="Lebron James"
             />
           </li>
           <li>
             <img
               id="kevin"
-              src="https://cdn.nba.com/headshots/nba/latest/1040x760/201142.png"
+              src="${kevin}"
               draggable="true"
               class="playerDrag"
+              title="Kevin Durant"
             />
           </li>
           <li>
             <img
               id="stephen"
-              src="https://cdn-qa.nba.com/headshots/nba/latest/1040x760/201939.png"
+              src="${steph}"
               draggable="true"
               class="playerDrag"
+              title="Stephen Curry"
             />
           </li>
           <li>
             <img
-              id="drag1"
-              src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png"
+              id="michael"
+              src="${michael}"
               draggable="true"
               class="playerDrag"
-              title="lebron James"
+              title="Michael Jordan"
             />
           </li>
           <li>
             <img
-              id="drag2"
-              src="https://cdn.nba.com/headshots/nba/latest/1040x760/201142.png"
+              id="larry"
+              src="${larry}"
               draggable="true"
               class="playerDrag"
+              title="Larry Bird"
             />
           </li>
           <li>
             <img
-              id="drag3"
-              src="https://cdn-qa.nba.com/headshots/nba/latest/1040x760/201939.png"
+              id="kareem"
+              src="${kareem}"
               draggable="true"
               class="playerDrag"
+              title="Kareem Abdul-Jabbar"
             />
           </li>
           <li>
             <img
-              id="drag1"
-              src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png"
+              id="wilt"
+              src="${wilt}"
               draggable="true"
               class="playerDrag"
-              title="lebron James"
+              title="Wilt Chamberlain"
             />
           </li>
           <li>
             <img
-              id="drag2"
-              src="https://cdn.nba.com/headshots/nba/latest/1040x760/201142.png"
+              id="magic"
+              src="${magic}"
               draggable="true"
               class="playerDrag"
+              title="Magic Johnson"
             />
           </li>
           <li>
             <img
-              id="drag3"
-              src="https://cdn-qa.nba.com/headshots/nba/latest/1040x760/201939.png"
+              id="giannis"
+              src="${gia}"
               draggable="true"
               class="playerDrag"
+              title="Giannis Antetokounmpo"
             />
           </li>
           <li>
             <img
-              id="drag1"
-              src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png"
+              id="kobe"
+              src="${kobe}"
               draggable="true"
               class="playerDrag"
-              title="lebron James"
+              title="Kobe Bryant"
             />
           </li>
           <li>
             <img
-              id="drag2"
-              src="https://cdn.nba.com/headshots/nba/latest/1040x760/201142.png"
+              id="wade"
+              src="${wade}"
               draggable="true"
               class="playerDrag"
+              title="Dwyane Wade"
             />
           </li>
           <li>
             <img
-              id="drag3"
-              src="https://cdn-qa.nba.com/headshots/nba/latest/1040x760/201939.png"
+              id="tim"
+              src="${tim}"
               draggable="true"
               class="playerDrag"
+              title="Tim Duncan"
             />
           </li>
         </ul>
