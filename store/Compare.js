@@ -2,5 +2,7 @@ export default {
   header: "Compare Players",
   view: "Compare",
   stats1: {},
-  nameVariable: ""
+  name: "",
+  id: "",
+  season: ""
 };

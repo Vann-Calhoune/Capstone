@@ -3,24 +3,115 @@ import html from "html-literal";
 export default state =>
   html`
     <div class="rankContent">
-      <div class="rankSpace">
-        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <img
-          id="drag1"
-          src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png"
-          draggable="true"
-          ondragstart="drag(event)"
-        />
-        <div></div>
-        <div><span>2</span></div>
-        <div><span>3</span></div>
-        <div><span>4</span></div>
-        <div><span>5</span></div>
-        <div><span>6</span></div>
-        <div><span>7</span></div>
-        <div><span>8</span></div>
-        <div><span>9</span></div>
-        <div><span>10</span></div>
+      <div class="dropTarget" id="rankSpace">
+        <!-- <div id="div1"></div>
+        <div id="div1"></div>
+        <div id="div1"></div> -->
+      </div>
+      <div class="dropTarget" id="playerSpace">
+        <input type="text" id="rankSearch" placeholder="Search for player" />
+        <ul>
+          <li>
+            <img
+              id="lebron"
+              src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png"
+              draggable="true"
+              class="playerDrag"
+              title="lebron James"
+            />
+          </li>
+          <li>
+            <img
+              id="kevin"
+              src="https://cdn.nba.com/headshots/nba/latest/1040x760/201142.png"
+              draggable="true"
+              class="playerDrag"
+            />
+          </li>
+          <li>
+            <img
+              id="stephen"
+              src="https://cdn-qa.nba.com/headshots/nba/latest/1040x760/201939.png"
+              draggable="true"
+              class="playerDrag"
+            />
+          </li>
+          <li>
+            <img
+              id="drag1"
+              src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png"
+              draggable="true"
+              class="playerDrag"
+              title="lebron James"
+            />
+          </li>
+          <li>
+            <img
+              id="drag2"
+              src="https://cdn.nba.com/headshots/nba/latest/1040x760/201142.png"
+              draggable="true"
+              class="playerDrag"
+            />
+          </li>
+          <li>
+            <img
+              id="drag3"
+              src="https://cdn-qa.nba.com/headshots/nba/latest/1040x760/201939.png"
+              draggable="true"
+              class="playerDrag"
+            />
+          </li>
+          <li>
+            <img
+              id="drag1"
+              src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png"
+              draggable="true"
+              class="playerDrag"
+              title="lebron James"
+            />
+          </li>
+          <li>
+            <img
+              id="drag2"
+              src="https://cdn.nba.com/headshots/nba/latest/1040x760/201142.png"
+              draggable="true"
+              class="playerDrag"
+            />
+          </li>
+          <li>
+            <img
+              id="drag3"
+              src="https://cdn-qa.nba.com/headshots/nba/latest/1040x760/201939.png"
+              draggable="true"
+              class="playerDrag"
+            />
+          </li>
+          <li>
+            <img
+              id="drag1"
+              src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png"
+              draggable="true"
+              class="playerDrag"
+              title="lebron James"
+            />
+          </li>
+          <li>
+            <img
+              id="drag2"
+              src="https://cdn.nba.com/headshots/nba/latest/1040x760/201142.png"
+              draggable="true"
+              class="playerDrag"
+            />
+          </li>
+          <li>
+            <img
+              id="drag3"
+              src="https://cdn-qa.nba.com/headshots/nba/latest/1040x760/201939.png"
+              draggable="true"
+              class="playerDrag"
+            />
+          </li>
+        </ul>
       </div>
     </div>
   `;

@@ -78,15 +78,6 @@ header {
 
  }
 
-#div1, #drag1 {
-  border: 1px solid black;
-  height: 60px;
-  width: 60px;
-
-}
-
-
-
  .fas {
    position: absolute;
    top: 30px;
@@ -107,10 +98,24 @@ footer {
 
 
 /* rank */
-.playerHeads {
-  height: 85px;
-  width: 85px;
-  border: 1px solid blue;
+#playerSpace {
+  border: 1px solid red;
+  overflow: auto;
+  max-width: 30vw;
+  max-height: 90vh;
+}
+
+
+
+#div1, .playerDrag {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+
+}
+
+.playerDrag {
+  display: list-item;
 }
 
 img {
@@ -141,17 +146,23 @@ img {
   margin: 10px;
 }
 
-.rankSpace {
+#rankSpace {
   border: 1px solid black;
   height: 90vh;
   width: 70vw;
 
 }
 
+
+
 .playerSpace {
   border: 1px solid black;
   height: 90vh;
   width: 30vw;
+}
+
+.dragEnter {
+  border: 2px dashed #000;
 }
 /* end rank */
 
@@ -276,3 +287,4 @@ table, th, td {
     height: 100%;
   }
 }
+
