@@ -4,9 +4,9 @@ export default state =>
   html`
     <div class="comparePlayers">
       <div class="playerOne">
-        <form id="form1">
-          <input type="text" id="search1" placeholder="Player 1" />
-          <select id="yearSelection" class="selectYear">
+        <form id="compareForm">
+          <input type="text" class="playerSearchInput" id="player1" placeholder="Player 1" />
+          <select id="playerOneYear" class="selectYear">
             <option>2021</option>
             <option>2020</option>
             <option>2019</option>
@@ -28,9 +28,19 @@ export default state =>
             <option>2003</option>
             <option>2002</option>
             <option>2001</option>
-
+            <option>2000</option>
+            <option>1999</option>
+            <option>1998</option>
+            <option>1997</option>
+            <option>1996</option>
+            <option>1995</option>
+            <option>1994</option>
+            <option>1993</option>
+            <option>1992</option>
+            <option>1991</option>
+          </select>
           <input id="submit1" type="submit" value="Submit" />
-        </form>
+
         <br />
         <table>
           <tr>
@@ -68,9 +78,41 @@ export default state =>
         </table>
       </div>
       <div class="playerTwo">
-        <form id="form2">
-          <input type="text" id="search2" placeholder="Player 2" />
-          <input type="submit" value="Submit" />
+
+          <input class="playerSearchInput" type="text" id="player2" placeholder="Player 2" />
+          <select id="playerTwoYear" class="selectYear">
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            <option>2011</option>
+            <option>2010</option>
+            <option>2009</option>
+            <option>2008</option>
+            <option>2007</option>
+            <option>2006</option>
+            <option>2005</option>
+            <option>2004</option>
+            <option>2003</option>
+            <option>2002</option>
+            <option>2001</option>
+            <option>2000</option>
+            <option>1999</option>
+            <option>1998</option>
+            <option>1997</option>
+            <option>1996</option>
+            <option>1995</option>
+            <option>1994</option>
+            <option>1993</option>
+            <option>1992</option>
+            <option>1991</option>
+          </select>
         </form>
         <br />
         <table>

@@ -105,6 +105,13 @@ footer {
   max-height: 90vh;
 }
 
+#search1, #search2 {
+  height: 5vh;
+  width: 15vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
 
 
 #div1, .playerDrag {
@@ -112,6 +119,18 @@ footer {
   height: 100px;
   width: 100px;
 
+}
+
+#box1 {
+  border: 3px solid purple;
+  height: 100px;
+  width: 100px;
+}
+
+.new {
+  border: 1px solid green;
+  height: 100px;
+  width: 100px;
 }
 
 .playerDrag {
@@ -148,8 +167,8 @@ img {
 
 #rankSpace {
   border: 1px solid black;
-  height: 90vh;
-  width: 70vw;
+  height: 100px;
+  width: 100px;
 
 }
 

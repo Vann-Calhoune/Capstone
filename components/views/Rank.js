@@ -15,11 +15,16 @@ import wade from "../../assets/images/wadeHead.png";
 export default state =>
   html`
     <div class="rankContent">
-      <div class="dropTarget" id="rankSpace">
-        <!-- <div id="div1"></div>
-        <div id="div1"></div>
-        <div id="div1"></div> -->
-      </div>
+      <div class="dropTarget" id="rankSpace"></div>
+      <div class="dropTarget" id="rankSpace"></div>
+      <div class="dropTarget" id="rankSpace"></div>
+      <div class="dropTarget" id="rankSpace"></div>
+      <div class="dropTarget" id="rankSpace"></div>
+      <div class="dropTarget" id="rankSpace"></div>
+      <div class="dropTarget" id="rankSpace"></div>
+      <div class="dropTarget" id="rankSpace"></div>
+      <div class="dropTarget" id="rankSpace"></div>
+      <div class="dropTarget" id="rankSpace"></div>
       <div class="dropTarget" id="playerSpace">
         <input type="text" id="rankSearch" placeholder="Search for player" />
         <ul>
