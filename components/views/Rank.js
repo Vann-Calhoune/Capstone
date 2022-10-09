@@ -67,116 +67,103 @@ export default state =>
       </div>
       <div class="dropTarget" id="playerSpace">
         <input type="text" id="rankSearch" placeholder="Search for player" />
-        <ul>
-          <li>
-            <img
-              id="lebron"
-              src="${lebron}"
-              draggable="true"
-              class="playerDrag"
-              title="Lebron James"
-            />
-          </li>
-          <li>
-            <img
-              id="kevin"
-              src="${kevin}"
-              draggable="true"
-              class="playerDrag"
-              title="Kevin Durant"
-            />
-          </li>
-          <li>
-            <img
-              id="stephen"
-              src="${steph}"
-              draggable="true"
-              class="playerDrag"
-              title="Stephen Curry"
-            />
-          </li>
-          <li>
-            <img
-              id="michael"
-              src="${michael}"
-              draggable="true"
-              class="playerDrag"
-              title="Michael Jordan"
-            />
-          </li>
-          <li>
-            <img
-              id="larry"
-              src="${larry}"
-              draggable="true"
-              class="playerDrag"
-              title="Larry Bird"
-            />
-          </li>
-          <li>
-            <img
-              id="kareem"
-              src="${kareem}"
-              draggable="true"
-              class="playerDrag"
-              title="Kareem Abdul-Jabbar"
-            />
-          </li>
-          <li>
-            <img
-              id="wilt"
-              src="${wilt}"
-              draggable="true"
-              class="playerDrag"
-              title="Wilt Chamberlain"
-            />
-          </li>
-          <li>
-            <img
-              id="magic"
-              src="${magic}"
-              draggable="true"
-              class="playerDrag"
-              title="Magic Johnson"
-            />
-          </li>
-          <li>
-            <img
-              id="giannis"
-              src="${gia}"
-              draggable="true"
-              class="playerDrag"
-              title="Giannis Antetokounmpo"
-            />
-          </li>
-          <li>
-            <img
-              id="kobe"
-              src="${kobe}"
-              draggable="true"
-              class="playerDrag"
-              title="Kobe Bryant"
-            />
-          </li>
-          <li>
-            <img
-              id="wade"
-              src="${wade}"
-              draggable="true"
-              class="playerDrag"
-              title="Dwyane Wade"
-            />
-          </li>
-          <li>
-            <img
-              id="tim"
-              src="${tim}"
-              draggable="true"
-              class="playerDrag"
-              title="Tim Duncan"
-            />
-          </li>
-        </ul>
+        <div class="playerIcons">
+          <img
+            id="lebron"
+            src="${lebron}"
+            draggable="true"
+            class="playerDrag"
+            title="Lebron James"
+          />
+
+          <img
+            id="kevin"
+            src="${kevin}"
+            draggable="true"
+            class="playerDrag"
+            title="Kevin Durant"
+          />
+
+          <img
+            id="stephen"
+            src="${steph}"
+            draggable="true"
+            class="playerDrag"
+            title="Stephen Curry"
+          />
+
+          <img
+            id="michael"
+            src="${michael}"
+            draggable="true"
+            class="playerDrag"
+            title="Michael Jordan"
+          />
+
+          <img
+            id="larry"
+            src="${larry}"
+            draggable="true"
+            class="playerDrag"
+            title="Larry Bird"
+          />
+
+          <img
+            id="kareem"
+            src="${kareem}"
+            draggable="true"
+            class="playerDrag"
+            title="Kareem Abdul-Jabbar"
+          />
+
+          <img
+            id="wilt"
+            src="${wilt}"
+            draggable="true"
+            class="playerDrag"
+            title="Wilt Chamberlain"
+          />
+
+          <img
+            id="magic"
+            src="${magic}"
+            draggable="true"
+            class="playerDrag"
+            title="Magic Johnson"
+          />
+
+          <img
+            id="giannis"
+            src="${gia}"
+            draggable="true"
+            class="playerDrag"
+            title="Giannis Antetokounmpo"
+          />
+
+          <img
+            id="kobe"
+            src="${kobe}"
+            draggable="true"
+            class="playerDrag"
+            title="Kobe Bryant"
+          />
+
+          <img
+            id="wade"
+            src="${wade}"
+            draggable="true"
+            class="playerDrag"
+            title="Dwyane Wade"
+          />
+
+          <img
+            id="tim"
+            src="${tim}"
+            draggable="true"
+            class="playerDrag"
+            title="Tim Duncan"
+          />
+        </div>
       </div>
     </div>
   `;

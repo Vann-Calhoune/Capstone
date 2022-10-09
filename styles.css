@@ -101,9 +101,30 @@ footer {
 #playerSpace {
   border: 1px solid red;
   overflow: auto;
-  width: 15vw;
+  width: 60vw;
   height: 90vh;
   margin-left: 15px;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+#rankSearch {
+margin: 0 auto;
+margin-bottom: 10px;
+margin-top: 10px;
+border-radius: 10px;
+height: 5vh;
+width: 25vw;
+
+}
+
+.playerIcons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 #search1, #search2 {
@@ -120,18 +141,6 @@ footer {
   height: 100px;
   width: 100px;
 
-}
-
-#box1 {
-  border: 3px solid purple;
-  height: 100px;
-  width: 100px;
-}
-
-.new {
-  border: 1px solid green;
-  height: 100px;
-  width: 100px;
 }
 
 .playerDrag {
@@ -173,12 +182,6 @@ img {
 
 
 }
-
-.dropTarget {
-
-
-}
-
 
 .playerSpace {
   border: 1px solid black;
@@ -310,7 +313,7 @@ input {
 
 .playerSearchInput {
   height: 35px;
-  width: 200px;
+  width: 30vw;
   margin-bottom: 10px;
 
 }
