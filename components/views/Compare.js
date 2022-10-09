@@ -39,10 +39,9 @@ export default state =>
             <option>1992</option>
             <option>1991</option>
           </select>
-          <input id="submit1" type="submit" value="Submit" />
-
         <br />
-        <table>
+
+        <table id="table1">
           <tr>
             <th title="Points per game">PPG</th>
             <td>${state.stats1.pts}</td>
@@ -76,6 +75,9 @@ export default state =>
             <td>${state.stats1.ft}</td>
           </tr>
         </table>
+      </div>
+      <div>
+      <input id="submit1" type="submit" value="Submit" />
       </div>
       <div class="playerTwo">
 
@@ -115,38 +117,38 @@ export default state =>
           </select>
         </form>
         <br />
-        <table>
+        <table id="table2">
           <tr>
+          <td></td>
             <th title="Points per game">PPG</th>
-            <td></td>
           </tr>
           <tr>
+            <td></td>
             <th title="Rebounds per game">REB</th>
-            <td></td>
           </tr>
           <tr>
+          <td></td>
             <th title="Assists per game">AST</th>
-            <td></td>
           </tr>
           <tr>
+          <td></td>
             <th title="Steals per game">STL</th>
-            <td></td>
           </tr>
           <tr>
+          <td></td>
             <th title="Blocks per game">BLK</th>
-            <td></td>
           </tr>
           <tr>
+          <td></td>
             <th title="Field goal percentage">FG%</th>
-            <td></td>
           </tr>
           <tr>
+          <td></td>
             <th title="3 point field goal percentage">3FG%</th>
-            <td></td>
           </tr>
           <tr>
-            <th title="Free throw percentage">FT%</th>
             <td></td>
+            <th title="Free throw percentage">FT%</th>
           </tr>
         </table>
       </div>

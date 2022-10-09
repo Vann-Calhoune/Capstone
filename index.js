@@ -36,8 +36,10 @@ function afterRender(state) {
     let draggedId = e.dataTransfer.getData("text");
     let refEl = document.getElementById(draggedId);
     //if "drop" occurs in different div detach element from current div, append to new div
-    refEl.parentNode.removeChild(refEl);
-    e.target.appendChild(refEl);
+    if (e.target.id === "rankSpace") {
+      refEl.parentNode.removeChild(refEl);
+      e.target.appendChild(refEl);
+    }
   }
   if (state.view === "Rank") {
     // Drag and Drop

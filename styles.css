@@ -101,8 +101,9 @@ footer {
 #playerSpace {
   border: 1px solid red;
   overflow: auto;
-  max-width: 30vw;
-  max-height: 90vh;
+  width: 15vw;
+  height: 90vh;
+  margin-left: 15px;
 }
 
 #search1, #search2 {
@@ -170,18 +171,33 @@ img {
   height: 100px;
   width: 100px;
 
+
 }
 
+.dropTarget {
+
+
+}
 
 
 .playerSpace {
   border: 1px solid black;
   height: 90vh;
-  width: 30vw;
+  width: 60vw;
 }
 
 .dragEnter {
   border: 2px dashed #000;
+}
+
+
+.rankZones {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+
+
+
 }
 /* end rank */
 
@@ -269,18 +285,49 @@ input {
   margin: 0 auto;
 }
 
-table {
+#table1 {
   border-radius: 0 15px 15px 0;
-  height: 50vh;
+  height: 75vh;
+  width: 30vw;
+  border: 1px solid black;
+
+}
+
+#table1 th, #table1 td {
+  border-radius: 0 15px 15px 0;
+}
+
+#table2 {
+  border-radius: 15px 0 0 15px;
+  height: 75vh;
   width: 30vw;
   border: 1px solid black;
 }
-.playerOne, .playerTwo {
+
+#table2 th, #table2 td {
+  border-radius: 15px 0 0 15px;
+}
+
+.playerSearchInput {
+  height: 35px;
+  width: 200px;
+  margin-bottom: 10px;
+
+}
+
+.selectYear {
+  margin-bottom: 10px;
+}
+
+
+.playerOne, .playerTwo, #submit1 {
   margin: 0 auto;
+  margin-top: 35px;
 }
 
 .comparePlayers {
   display: flex;
+  margin-bottom: 100px;
 }
 
 table, th, td {

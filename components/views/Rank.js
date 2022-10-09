@@ -15,16 +15,56 @@ import wade from "../../assets/images/wadeHead.png";
 export default state =>
   html`
     <div class="rankContent">
-      <div class="dropTarget" id="rankSpace"></div>
-      <div class="dropTarget" id="rankSpace"></div>
-      <div class="dropTarget" id="rankSpace"></div>
-      <div class="dropTarget" id="rankSpace"></div>
-      <div class="dropTarget" id="rankSpace"></div>
-      <div class="dropTarget" id="rankSpace"></div>
-      <div class="dropTarget" id="rankSpace"></div>
-      <div class="dropTarget" id="rankSpace"></div>
-      <div class="dropTarget" id="rankSpace"></div>
-      <div class="dropTarget" id="rankSpace"></div>
+      <div class="rankZones">
+        <div>
+          <div class="dropTarget" id="rankSpace"></div>
+          <h3>GOAT</h3>
+        </div>
+        <div>
+          <div class="dropTarget" id="rankSpace"></div>
+          <h3>2</h3>
+        </div>
+        <div>
+          <div class="dropTarget" id="rankSpace"></div>
+          <h3>3</h3>
+        </div>
+        <div>
+          <div class="dropTarget" id="rankSpace"></div>
+          <h3>4</h3>
+        </div>
+        <div>
+          <div class="dropTarget" id="rankSpace"></div>
+          <h3>5</h3>
+        </div>
+        <div>
+          <div class="dropTarget" id="rankSpace"></div>
+          <h3>6</h3>
+        </div>
+        <div>
+          <div class="dropTarget" id="rankSpace"></div>
+          <h3>7</h3>
+        </div>
+        <div>
+          <div class="dropTarget" id="rankSpace"></div>
+          <h3>8</h3>
+        </div>
+        <div>
+          <div class="dropTarget" id="rankSpace"></div>
+          <h3>9</h3>
+        </div>
+        <div>
+          <div class="dropTarget" id="rankSpace"></div>
+          <h3>10</h3>
+        </div>
+        <div>
+          <div class="dropTarget" id="rankSpace"></div>
+          <h3>11</h3>
+        </div>
+        <div>
+          <div class="dropTarget" id="rankSpace"></div>
+          <h3>12</h3>
+        </div>
+      </div>
       <div class="dropTarget" id="playerSpace">
         <input type="text" id="rankSearch" placeholder="Search for player" />
         <ul>
