@@ -14,6 +14,16 @@ import wade from "../../assets/images/wadeHead.png";
 
 export default state =>
   html`
+    <div class="rankInstructions">
+      <h1>Rank the NBA Greats!</h1>
+      <ul>
+        <li>
+          Drag and drop the players on the right to the spaces on the left.
+        </li>
+        <li>Search players by first name in the search box.</li>
+        <li>Refresh the page to clear the ranking board.</li>
+      </ul>
+    </div>
     <div class="rankContent">
       <div class="rankZones">
         <div>

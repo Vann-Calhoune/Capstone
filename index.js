@@ -41,48 +41,48 @@ function afterRender(state) {
       e.target.appendChild(refEl);
     }
   }
-  if (state.view === "Rank") {
-    // Drag and Drop
-    //save ID
 
-    // variables for players and drop
-    let draggable = document.querySelectorAll(".playerDrag");
-    let targets = document.querySelectorAll(".dropTarget");
+  // Drag and Drop
+  //save ID
 
-    //Event listeners added to all playerDrag items
-    draggable.forEach(player => {
-      player.addEventListener("dragstart", handleDragStart);
+  // variables for players and drop
+  let draggable = document.querySelectorAll(".playerDrag");
+  let targets = document.querySelectorAll(".dropTarget");
+
+  //Event listeners added to all playerDrag items
+  draggable.forEach(player => {
+    player.addEventListener("dragstart", handleDragStart);
+  });
+
+  //Add event listeners to drop zones
+  targets.forEach(space => {
+    space.addEventListener("dragover", handleOverDrop);
+    space.addEventListener("drop", handleOverDrop);
+  });
+
+  // Compare player search
+
+  // variables for input bar and player images
+  let searchBox = document.querySelector("#rankSearch");
+  let images = document.querySelectorAll("img");
+
+  searchBox.oninput = () => {
+    //hide all players when you begin typing
+    images.forEach(hide => (hide.style.display = "none"));
+    let value = searchBox.value;
+    //if user input value = player id, show player
+    images.forEach(filter => {
+      let playerName = filter.getAttribute("id");
+      if (playerName.includes(value)) {
+        filter.style.display = "block";
+      }
+
+      //If you delete search block all players display
+      if (searchBox.value == "") {
+        filter.style.display = "block";
+      }
     });
-
-    //Add event listeners to drop zones
-    targets.forEach(space => {
-      space.addEventListener("dragover", handleOverDrop);
-      space.addEventListener("drop", handleOverDrop);
-    });
-
-    // Compare player search
-
-    // variables for input bar and player images
-    let searchBox = document.querySelector("#rankSearch");
-    let images = document.querySelectorAll("img");
-
-    searchBox.oninput = () => {
-      //hide all players when you begin typing
-      images.forEach(hide => (hide.style.display = "none"));
-      let value = searchBox.value;
-      //if user input value = player id, show player
-      images.forEach(filter => {
-        let playerName = filter.getAttribute("id");
-        if (playerName.includes(value)) {
-          filter.style.display = "block";
-        }
-        //If you delete search block all players display
-        if (searchBox.value == "") {
-          filter.style.display = "block";
-        }
-      });
-    };
-  }
+  };
 
   // form submission
   const formEntry1 = document.querySelector("#compareForm");
@@ -156,6 +156,9 @@ function afterRender(state) {
       })
       .catch(err => {
         console.log(err);
+      })
+      .finally(() => {
+        render(store[state.view]);
       });
   });
 }

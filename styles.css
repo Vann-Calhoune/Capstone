@@ -10,9 +10,15 @@ body {
   background-color: #FFFAF0;
 }
 
+footer {
+  background-color: #FBC403;
+  width: 100vw;
+  height: auto;
+
+}
 
 
-/* start nav */
+/* start nav ******************** */
 .headerBar {
   display: flex;
   flex-direction: row;
@@ -70,7 +76,7 @@ header {
 
    #navigation {
     flex-direction: column;
-     /* background-color: #FBC403; */
+     background-color: #FBC403;
      right: 0;
      top: 70px;
 
@@ -97,15 +103,35 @@ footer {
 }
 
 
-/* rank */
+/* rank ********************* */
+.rankInstructions {
+/* border: 1px solid black; */
+  margin: 20px;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+.rankInstructions > h1 {
+  text-align: center;
+
+}
+
+.rankInstructions > ul {
+  list-style: none;
+}
+
+
+
 #playerSpace {
-  border: 1px solid red;
+  border: 2px solid black;
   overflow: auto;
   width: 60vw;
   height: 90vh;
   margin-left: 15px;
   border-radius: 10px;
   padding: 10px;
+  border-style: inset;
 
 }
 
@@ -145,6 +171,8 @@ width: 25vw;
 
 .playerDrag {
   display: list-item;
+  border-radius: 10px;
+  border: 2px solid navy;
 }
 
 img {
@@ -179,6 +207,8 @@ img {
   border: 1px solid black;
   height: 100px;
   width: 100px;
+  border-radius: 10px;
+  border: 2px solid navy;
 
 
 }
@@ -198,13 +228,17 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
-
-
-
+  border: 2px solid  black;
+  border-radius: 10px;
+  padding: 5px;
 }
+
+
+
+
 /* end rank */
 
-/* start home */
+/* start home **************** */
 
 
 main, aside, footer {
@@ -278,10 +312,26 @@ footer {
   width: 100%;
 }
 
+.articles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
+  flex: 1;
+  min-height: 0;
+
+}
+
+@media (max-width: 700px) {
+  .blog {
+    height: 100%;
+  }
+}
+
 
 /* end Home */
 
-/* start compare */
+/* start compare ******************* */
 input {
   display: block;
   border-radius: 0 15px 15px 0;
@@ -341,19 +391,5 @@ table, th, td {
 
 /* end Compare */
 
-.articles {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  overflow: auto;
-  flex: 1;
-  min-height: 0;
 
-}
-
-@media (max-width: 700px) {
-  .blog {
-    height: 100%;
-  }
-}
 

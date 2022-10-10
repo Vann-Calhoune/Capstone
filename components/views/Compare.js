@@ -39,8 +39,9 @@ export default state =>
             <option>1992</option>
             <option>1991</option>
           </select>
+          <input id="submit1" type="submit" value="Submit" />
         <br />
-
+        <br />
         <table id="table1">
           <tr>
             <th title="Points per game">PPG</th>
@@ -75,9 +76,7 @@ export default state =>
             <td>${state.stats1.ft}</td>
           </tr>
         </table>
-      </div>
-      <div>
-      <input id="submit1" type="submit" value="Submit" />
+
       </div>
       <div class="playerTwo">
 
@@ -151,6 +150,8 @@ export default state =>
             <th title="Free throw percentage">FT%</th>
           </tr>
         </table>
+
+
       </div>
     </div>
   `;
