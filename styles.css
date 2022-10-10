@@ -109,16 +109,20 @@ footer {
   margin: 20px;
   border-radius: 10px;
   padding: 10px;
-
-}
-
-.rankInstructions > h1 {
+  padding-top: 5px;
+  margin-top: 5px;
   text-align: center;
 
 }
 
+.rankInstructions > h1 {
+
+
+}
+
 .rankInstructions > ul {
-  list-style: none;
+  list-style:none;
+  line-height: 24px;
 }
 
 
