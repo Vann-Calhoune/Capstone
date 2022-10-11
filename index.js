@@ -25,10 +25,11 @@ function afterRender(state) {
   document.querySelector(".fa-basketball").addEventListener("click", () => {
     document.querySelector("#navigation").classList.toggle("hidden--mobile");
   });
-
-  function handleDragStart(e) {
-    e.dataTransfer.setData("text", e.target.id);
-    console.log("Storing ID");
+  if (state.view === "Rank") {
+    function handleDragStart(e) {
+      e.dataTransfer.setData("text", e.target.id);
+      console.log("Storing ID");
+    }
     function handleOverDrop(e) {
       e.preventDefault();
       //Stores dragged elements ID and then the reference to dragged element
@@ -63,8 +64,9 @@ function afterRender(state) {
 
     // variables for input bar and player images
     let searchBox = document.querySelector("#rankSearch");
-    let images = (searchBox.oninput = () => {
-      //hide all players when you begin typing
+    let images = document.querySelectorAll("img");
+    //hide all players when you begin typing
+    searchBox.oninput = () => {
       images.forEach(hide => (hide.style.display = "none"));
       let value = searchBox.value;
       //if user input value = player id, show player
@@ -79,9 +81,8 @@ function afterRender(state) {
           filter.style.display = "block";
         }
       });
-    });
+    };
   }
-
   if (state.view === "Compare") {
     // form submission
     const formEntry = document.querySelector("#compareForm");
