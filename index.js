@@ -94,8 +94,9 @@ function afterRender(state) {
       store.Compare.name = document.getElementById("player1").value;
       store.Compare.name2 = document.getElementById("player2").value;
       console.log(`new value ${store.Compare.name}`);
+      console.log(`new value ${store.Compare.name2}`);
       store.Compare.season = document.getElementById("playerOneYear").value;
-      store.Compare.season2 = document.getElementById("playerTwoYear");
+      store.Compare.season2 = document.getElementById("playerTwoYear").value;
 
       // API call to get player ID using search value
       await axios
@@ -111,18 +112,18 @@ function afterRender(state) {
           console.log(err);
         });
 
-      // await axios
-      //   .get(
-      //     `https://www.balldontlie.io/api/v1/players?search=${store.Compare.name2}`
-      //   )
-      //   .then(response => {
-      //     store.Compare.id2 = response.data.data[0].id;
+      await axios
+        .get(
+          `https://www.balldontlie.io/api/v1/players?search=${store.Compare.name2}`
+        )
+        .then(response => {
+          store.Compare.id2 = response.data.data[0].id;
 
-      //     console.log(store.Compare.id);
-      //   })
-      //   .catch(err => {
-      //     console.log(err);
-      //   });
+          console.log(store.Compare.id);
+        })
+        .catch(err => {
+          console.log(err);
+        });
 
       // API call to get player stats using newly created user ID
       await axios
@@ -141,18 +142,27 @@ function afterRender(state) {
           store.Compare.stats1.fg3 = response.data.data[0].fg3_pct;
           store.Compare.stats1.ft = response.data.data[0].ft_pct;
           console.log(store.Compare);
+        })
+        .catch(err => {
+          console.log(err);
+        });
 
-          // store.Compare.stats2 = {};
-          // console.log(response.data.data);
-          // store.Compare.stats2.pts = [response.data.data[0].pts];
-          // store.Compare.stats2.ast = [response.data.data[0].ast];
-          // store.Compare.stats2.reb = [response.data.data[0].reb];
-          // store.Compare.stats2.stl = [response.data.data[0].stl];
-          // store.Compare.stats2.blk = [response.data.data[0].blk];
-          // store.Compare.stats2.fg = [response.data.data[0].fg_pct];
-          // store.Compare.stats2.fg3 = [response.data.data[0].fg3_pct];
-          // store.Compare.stats2.ft = [response.data.data[0].ft_pct];
-          // console.log(store.Compare);
+      await axios
+        .get(
+          `https://www.balldontlie.io/api/v1/season_averages?season=${store.Compare.season2}&player_ids[]=${store.Compare.id2}`
+        )
+        .then(response => {
+          store.Compare.stats2 = {};
+          console.log(response.data.data);
+          store.Compare.stats2.pts = [response.data.data[0].pts];
+          store.Compare.stats2.ast = [response.data.data[0].ast];
+          store.Compare.stats2.reb = [response.data.data[0].reb];
+          store.Compare.stats2.stl = [response.data.data[0].stl];
+          store.Compare.stats2.blk = [response.data.data[0].blk];
+          store.Compare.stats2.fg = [response.data.data[0].fg_pct];
+          store.Compare.stats2.fg3 = [response.data.data[0].fg3_pct];
+          store.Compare.stats2.ft = [response.data.data[0].ft_pct];
+          console.log(store.Compare);
         })
         .catch(err => {
           console.log(err);
