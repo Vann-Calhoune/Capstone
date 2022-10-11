@@ -14,7 +14,7 @@ import wade from "../../assets/images/wadeHead.png";
 
 export default state =>
   html`
-    <div class="rankInstructions">
+    <div class="instructions">
       <h1>Rank the NBA Greats!</h1>
       <ul>
         <li>

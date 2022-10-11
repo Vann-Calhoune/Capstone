@@ -2,6 +2,14 @@ import html from "html-literal";
 
 export default state =>
   html`
+  <div class="instructions">
+    <h1>Numbers Don't Lie!</h1>
+    <ul>
+      <li>Enter the names of up to two players you would like to compare.</li>
+      <li>Select the year of their stats you would like to see.</li>
+      <li>Click Submit!</li>
+    </ul>
+  </div>
     <div class="comparePlayers">
       <div class="playerOne">
         <form id="compareForm">

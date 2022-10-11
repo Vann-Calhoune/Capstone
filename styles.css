@@ -104,7 +104,7 @@ footer {
 
 
 /* rank ********************* */
-.rankInstructions {
+.instructions {
 /* border: 1px solid black; */
   margin: 20px;
   border-radius: 10px;
@@ -120,7 +120,7 @@ footer {
 
 }
 
-.rankInstructions > ul {
+.instructions > ul {
   list-style:none;
   line-height: 24px;
 }
