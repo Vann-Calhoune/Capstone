@@ -133,6 +133,8 @@ function afterRender(state) {
         .then(response => {
           store.Compare.stats1 = {};
           console.log(response.data.data);
+          store.Compare.stats1.gp = response.data.data[0].games_played;
+          store.Compare.stats1.min = response.data.data[0].min;
           store.Compare.stats1.pts = response.data.data[0].pts;
           store.Compare.stats1.ast = response.data.data[0].ast;
           store.Compare.stats1.reb = response.data.data[0].reb;
@@ -141,6 +143,7 @@ function afterRender(state) {
           store.Compare.stats1.fg = response.data.data[0].fg_pct;
           store.Compare.stats1.fg3 = response.data.data[0].fg3_pct;
           store.Compare.stats1.ft = response.data.data[0].ft_pct;
+          store.Compare.stats1.to = response.data.data[0].turnover;
           console.log(store.Compare);
         })
         .catch(err => {
@@ -154,6 +157,8 @@ function afterRender(state) {
         .then(response => {
           store.Compare.stats2 = {};
           console.log(response.data.data);
+          store.Compare.stats2.gp = response.data.data[0].games_played;
+          store.Compare.stats2.min = response.data.data[0].min;
           store.Compare.stats2.pts = [response.data.data[0].pts];
           store.Compare.stats2.ast = [response.data.data[0].ast];
           store.Compare.stats2.reb = [response.data.data[0].reb];
@@ -162,6 +167,7 @@ function afterRender(state) {
           store.Compare.stats2.fg = [response.data.data[0].fg_pct];
           store.Compare.stats2.fg3 = [response.data.data[0].fg3_pct];
           store.Compare.stats2.ft = [response.data.data[0].ft_pct];
+          store.Compare.stats2.to = response.data.data[0].turnover;
           console.log(store.Compare);
         })
         .catch(err => {

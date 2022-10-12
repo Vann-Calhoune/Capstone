@@ -96,12 +96,26 @@ export default state =>
       </div>
     </form>
     <br />
-    <h3 class="inputData">
-      ${state.name} / ${state.season} vs ${state.name2} / ${state.season2}
-    </h3>
+
     <br />
     <div class="statTables">
       <table id="table1">
+        <tr>
+          <th title="Player Name">Player</th>
+          <td>${state.name}</td>
+        </tr>
+        <tr>
+          <th title="Season">Season</th>
+          <td>${state.season}</td>
+        </tr>
+        <tr>
+          <th title="Games Played">GP</th>
+          <td>${state.stats1.gp}</td>
+        </tr>
+        <tr>
+          <th title="Minutes per game">MPG</th>
+          <td>${state.stats1.min}</td>
+        </tr>
         <tr>
           <th title="Points per game">PPG</th>
           <td>${state.stats1.pts}</td>
@@ -134,9 +148,30 @@ export default state =>
           <th title="Free throw percentage">FT%</th>
           <td>${state.stats1.ft}</td>
         </tr>
+        <tr>
+          <th title="Turnovers per game">TO</th>
+          <td>${state.stats1.to}</td>
+        </tr>
       </table>
 
       <table id="table2">
+        <tr>
+          <td>${state.name2}</td>
+          <th title="Player Name">Player</th>
+        </tr>
+        <tr>
+          <td>${state.season2}</td>
+          <th title="Season">Season</th>
+        </tr>
+        <tr>
+          <td>${state.stats2.gp}</td>
+          <th title="Games Played">GP</th>
+        </tr>
+        <tr>
+          <td>${state.stats2.min}</td>
+          <th title="Minutes per game">MPG</th>
+        </tr>
+        <tr></tr>
         <tr>
           <td>${state.stats2.pts}</td>
           <th title="Points per game">PPG</th>
@@ -168,6 +203,10 @@ export default state =>
         <tr>
           <td>${state.stats2.ft}</td>
           <th title="Free throw percentage">FT%</th>
+        </tr>
+        <tr>
+          <td>${state.stats2.to}</td>
+          <th title="Turnovers per game">TO</th>
         </tr>
       </table>
     </div>
