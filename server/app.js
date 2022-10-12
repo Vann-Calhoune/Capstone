@@ -15,6 +15,24 @@ db.once(
   "open",
   console.log.bind(console, "Successfully opened connection to Mongo!")
 );
+
+// CORS Middleware
+const cors = (req, res, next) => {
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type, Accept,Authorization,Origin"
+  );
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+  res.setHeader("Access-Control-Allow-Credentials", true);
+  next();
+};
+
+app.use(cors);
+
 // Handle the request with HTTP GET method from http://localhost:4040/status
 app.get("/status", (request, response) => {
   // Create the headers for response by default 200
