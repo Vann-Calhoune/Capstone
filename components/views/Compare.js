@@ -96,6 +96,9 @@ export default state =>
       </div>
     </form>
     <br />
+    <h3 class="inputData">
+      ${state.name} / ${state.season} vs ${state.name2} / ${state.season2}
+    </h3>
     <br />
     <div class="statTables">
       <table id="table1">
