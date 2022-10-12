@@ -9,7 +9,7 @@ export default state => html`
             class="postImage"
             src="https://www.si.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg5ODc0NDQzOTU3MzE0Nzg2/victor-wembanyama-2023-nba-draft-prospect.jpg"
           />
-          <h1>Is Wembanyama Worth It?</h1>
+          <h2>Is Wembanyama Worth It?</h2>
           <time datetime="09-24-2022">September 24, 2022</time>
           <br />
           <p>
@@ -22,54 +22,55 @@ export default state => html`
             class="postImage poole"
             src="https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg4ODc5MDc5MzgwODg3MDcy/usatsi_17994090_168388303_lowres.jpg"
           />
-          <h1>Heading</h1>
-          <time></time>
+          <h2>Poole Party Over?</h2>
+          <time datetime="09-24-2022">September 24, 2022</time>
           <br />
-          <p>ncviwulnu niebqfpbco boqc c salc n</p>
+          <p>Is Jordan Poole the future of...</p>
         </article>
         <article class="posts">
           <img
             class="postImage"
             src="https://lakersdaily.com/wp-content/uploads/2021/09/kaj-lbj-e1577704039763.jpeg"
           />
-          <h1>Heading</h1>
-          <time></time>
+          <h2>New #1</h2>
+          <time datetime="09-24-2022">September 24, 2022</time>
           <br />
-          <p>ncviwulnu niebqfpbco boqc c salc n</p>
+          <p>Lebron James is on pace to surpass...</p>
         </article>
         <article class="posts">
           <img
             class="postImage"
             src="https://www.nbcsports.com/sites/rsnunited/files/styles/metatags_opengraph/public/article/hero/Klay-Thompson-Steph-Curry-Draymond-Green-USA-10866471.jpg"
           />
-          <h1>Heading</h1>
-          <time></time>
+          <h2>Eyes on 5</h2>
+          <time datetime="09-24-2022">September 24, 2022</time>
           <br />
-          <p>ncviwulnu niebqfpbco boqc c salc n</p>
+          <p>The Warriors begin their hunt for...</p>
         </article>
         <article class="posts">
           <img
             class="postImage"
             src="https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTgyNTc5MDMzNDQ2Mjk1MjA4/311bc9e5-9a84-4619-b85b-df51b6c3ff4c.jpg"
           />
-          <h1>Heading</h1>
-          <time></time>
+          <h2>New Sheriff in Town</h2>
+          <time datetime="09-24-2022">September 24, 2022</time>
           <br />
-          <p>ncviwulnu niebqfpbco boqc c salc n</p>
+          <p>With Lebron entering his 20th year, the face...</p>
         </article>
         <article class="posts">
           <img
             class="postImage"
             src="https://www.outkick.com/wp-content/uploads/photomix-image-30.png"
           />
-          <h1>Heading</h1>
-          <time></time>
+          <h2>Snub of the Century</h2>
+          <time datetime="09-24-2022">September 24, 2022</time>
           <br />
-          <p>ncviwulnu niebqfpbco boqc c salc n</p>
+          <p>With only 75 spots available, it's easy to see...</p>
         </article>
       </div>
     </main>
     <aside class="trending">
+      <h2 class="breaking">Trending News</h2>
       <div>
         <h4>Number 1 pick</h4>
         <img

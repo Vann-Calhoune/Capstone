@@ -1,4 +1,4 @@
 export default {
-  header: "Who is your GOAT?",
+  header: "NBA 75",
   view: "Rank"
 };

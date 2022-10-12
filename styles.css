@@ -8,6 +8,7 @@
 
 body {
   background-color: #FFFAF0;
+  font-family: 'Roboto', sans-serif;
 }
 
 footer {
@@ -103,145 +104,6 @@ footer {
 }
 
 
-/* rank ********************* */
-.instructions {
-/* border: 1px solid black; */
-  margin: 20px;
-  border-radius: 10px;
-  padding: 10px;
-  padding-top: 5px;
-  margin-top: 5px;
-  text-align: center;
-
-}
-
-.rankInstructions > h1 {
-
-
-}
-
-.instructions > ul {
-  list-style:none;
-  line-height: 24px;
-}
-
-
-
-#playerSpace {
-  border: 2px solid black;
-  overflow: auto;
-  width: 60vw;
-  height: 90vh;
-  margin-left: 15px;
-  border-radius: 10px;
-  padding: 10px;
-  border-style: inset;
-
-}
-
-#rankSearch {
-margin: 0 auto;
-margin-bottom: 10px;
-margin-top: 10px;
-border-radius: 10px;
-height: 5vh;
-width: 25vw;
-
-}
-
-.playerIcons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-#search1, #search2 {
-  height: 5vh;
-  width: 15vw;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-}
-
-
-#div1, .playerDrag {
-  border: 1px solid black;
-  height: 100px;
-  width: 100px;
-
-}
-
-.playerDrag {
-  display: list-item;
-  border-radius: 10px;
-  border: 2px solid navy;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.placeHolder {
-  border: 1px solid red;
-  height: 85px;
-  width: 85px;
-}
-
-.hide {
-  opacity: .75;
-}
-
-.rankContent {
-  display: flex;
-  flex-direction: column;
-
-}
-
-.rankContent {
-  display: flex;
-  flex-direction: row;
-  padding: 10px;
-  margin: 10px;
-}
-
-#rankSpace {
-  border: 1px solid black;
-  height: 100px;
-  width: 100px;
-  border-radius: 10px;
-  border: 2px solid navy;
-
-
-}
-
-.playerSpace {
-  border: 1px solid black;
-  height: 90vh;
-  width: 60vw;
-}
-
-.dragEnter {
-  border: 2px dashed #000;
-}
-
-
-.rankZones {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 15px;
-  border: 2px solid  black;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-
-
-
-/* end rank */
-
 /* start home **************** */
 
 
@@ -264,6 +126,14 @@ margin: 5px;
   max-height: 430px;
 
 
+}
+
+.breaking {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  border: 4px inset black;
+  border-radius: 10px;
 }
 
 .blog {
@@ -297,6 +167,7 @@ main {
 
 aside {
   grid-area: sidebar;
+
 }
 
 footer {
@@ -334,6 +205,149 @@ footer {
 
 
 /* end Home */
+
+/* rank ********************* */
+.instructions {
+  /* border: 1px solid black; */
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 5px;
+    margin-top: 5px;
+    text-align: center;
+
+  }
+
+  .rankInstructions > h1 {
+
+
+  }
+
+  .instructions > ul {
+    list-style:none;
+    line-height: 24px;
+  }
+
+
+
+  #playerSpace {
+    border: 2px solid black;
+    overflow: auto;
+    width: 60vw;
+    height: 90vh;
+    margin-left: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    border-style: inset;
+
+  }
+
+  #rankSearch {
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 5vh;
+  width: 25vw;
+
+  }
+
+  .playerIcons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  #search1, #search2 {
+    height: 5vh;
+    width: 15vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+
+
+  #div1, .playerDrag {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+
+  }
+
+  .playerDrag {
+    display: list-item;
+    border-radius: 10px;
+    border: 2px solid navy;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .placeHolder {
+    border: 1px solid red;
+    height: 85px;
+    width: 85px;
+  }
+
+  .hide {
+    opacity: .75;
+  }
+
+  .rankContent {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .rankContent {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  #rankSpace {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid navy;
+
+
+  }
+
+  .playerSpace {
+    border: 1px solid black;
+    height: 90vh;
+    width: 60vw;
+  }
+
+  .dragEnter {
+    border: 2px dashed #000;
+  }
+
+
+  .rankZones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    border: 2px solid  black;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+
+  @media (max-width: 660px) {
+    .rankZones {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* end rank */
 
 /* start compare ******************* */
 input {
@@ -394,12 +408,17 @@ table, th, td {
 form {
   display: flex;
   margin: 20px;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 45px;
+  margin-right: 45px;
 }
 
 .statTables {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 20px;
+  gap: 10px;
 }
 
 td {
