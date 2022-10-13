@@ -41,6 +41,7 @@ app.get("/status", (request, response) => {
   response.send(JSON.stringify({ message: "Service healthy" }));
 });
 
+const PORT = process.env.PORT || 4040; // we use || to provide a default value
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040
-app.listen(4040, () => console.log("Listening on port 4040"));
+app.listen(PORT, () => console.log("Listening on port 4040"));
