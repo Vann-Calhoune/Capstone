@@ -4,19 +4,21 @@ export default state => html`
   <div class="blog">
     <main>
       <div class="articles">
-        <article id="post1" class="posts">
-          <img
-            class="postImage"
-            src="https://www.si.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg5ODc0NDQzOTU3MzE0Nzg2/victor-wembanyama-2023-nba-draft-prospect.jpg"
-          />
-          <h2>Is Wembanyama Worth It?</h2>
-          <time datetime="09-24-2022">September 24, 2022</time>
-          <br />
-          <p>
-            Standing at 7'5 with the ability to play both ends of the floor at a
-            high level...
-          </p>
-        </article>
+        <a href="/Post1"
+          ><article id="post1" class="posts">
+            <img
+              class="postImage"
+              src="https://www.si.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg5ODc0NDQzOTU3MzE0Nzg2/victor-wembanyama-2023-nba-draft-prospect.jpg"
+            />
+            <h2>Is Wembanyama Worth It?</h2>
+            <time datetime="09-24-2022">September 24, 2022</time>
+            <br />
+            <p>
+              Standing at 7'5 with the ability to play both ends of the floor at
+              a high level...
+            </p>
+          </article></a
+        >
         <article class="posts">
           <img
             class="postImage poole"
