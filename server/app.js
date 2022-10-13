@@ -2,6 +2,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const comments = require("./routers/comments");
 
 dotenv.config();
 // Initialize the Express application
@@ -31,7 +32,14 @@ const cors = (req, res, next) => {
   next();
 };
 
+const logging = (request, response, next) => {
+  console.log(`${request.method} ${request.url} ${Date.now()}`);
+  next();
+};
+
 app.use(cors);
+app.use(express.json());
+app.use(logging);
 
 // Handle the request with HTTP GET method from http://localhost:4040/status
 app.get("/status", (request, response) => {
@@ -41,7 +49,14 @@ app.get("/status", (request, response) => {
   response.send(JSON.stringify({ message: "Service healthy" }));
 });
 
+app.get("/echo/:input", (request, response) => {
+  const message = request.params.input;
+  response.status(418).json({ echo: message });
+});
+
+app.use("/comments", comments);
+
 const PORT = process.env.PORT || 4040; // we use || to provide a default value
 // Tell the Express app to start listening
 // Let the humans know I am running and listening on 4040
-app.listen(PORT, () => console.log("Listening on port 4040"));
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
