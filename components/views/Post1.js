@@ -75,5 +75,6 @@ export default state => html`
       <input id="commentSubmit" type="submit" />
     </form>
     <br />
+
   </div>
 `;

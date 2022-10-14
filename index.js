@@ -35,14 +35,10 @@ function afterRender(state) {
       let draggedId = e.dataTransfer.getData("text");
       let refEl = document.getElementById(draggedId);
       //if "drop" occurs in different div detach element from current div, append to new div
-      if (e.target.class === "playerDrag") {
-        return;
-      }
-      // if (e.target.id === "rankSpace") {
+
       refEl.parentNode.removeChild(refEl);
       e.target.appendChild(refEl);
     }
-    // }
 
     // Drag and Drop
     //save ID
@@ -67,6 +63,7 @@ function afterRender(state) {
     // variables for input bar and player images
     let searchBox = document.querySelector("#rankSearch");
     let images = document.querySelectorAll("img");
+
     //hide all players when you begin typing
     searchBox.oninput = () => {
       images.forEach(hide => (hide.style.display = "none"));
@@ -74,7 +71,7 @@ function afterRender(state) {
       //if user input value = player id, show player
       images.forEach(filter => {
         let playerName = filter.getAttribute("id");
-        if (playerName.includes(value)) {
+        if (playerName.startsWith(value)) {
           filter.style.display = "block";
         }
 

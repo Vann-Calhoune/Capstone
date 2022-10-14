@@ -85,7 +85,6 @@ export default state =>
             class="playerDrag"
             title="Lebron James"
           />
-
           <img
             id="kevin"
             src="${kevin}"
@@ -93,7 +92,6 @@ export default state =>
             class="playerDrag"
             title="Kevin Durant"
           />
-
           <img
             id="stephen"
             src="${steph}"
@@ -101,7 +99,6 @@ export default state =>
             class="playerDrag"
             title="Stephen Curry"
           />
-
           <img
             id="michael"
             src="${michael}"

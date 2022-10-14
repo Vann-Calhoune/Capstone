@@ -2,6 +2,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const comments = require("./routers/comment");
 // const comments = require("./routers/comment");
 
 dotenv.config();
@@ -54,7 +55,7 @@ app.get("/echo/:input", (request, response) => {
   response.status(418).json({ echo: message });
 });
 
-// app.use("/comment", comments);
+app.use("/comment", comments);
 
 const PORT = process.env.PORT || 4040; // we use || to provide a default value
 // Tell the Express app to start listening
