@@ -10,6 +10,12 @@ import snub from "../../assets/images/snub.png";
 import vic from "../../assets/images/vicwemby.jpeg";
 import wbig3 from "../../assets/images/Wbig3.jpeg";
 import westbrook from "../../assets/images/westbrook.webp";
+import gobert from "../../assets/images/gobert.jpeg";
+import chet from "../../assets/images/chet.jpeg";
+import jamo from "../../assets/images/jaMorant.webp";
+import draft from "../../assets/images/draft.webp";
+import kings from "../../assets/images/kings.jpg";
+import pistons from "../../assets/images/pistons.jpeg";
 
 export default state => html`
   <div class="blog">
@@ -33,14 +39,14 @@ export default state => html`
           <h2>Poole Party Over?</h2>
           <time datetime="09-24-2022">September 24, 2022</time>
           <br />
-          <p>Is Jordan Poole the future of...</p>
+          <p>Is Jordan Poole the future of the...</p>
         </article>
         <article class="posts">
           <img class="postImage" src="${lbjkaj}" />
           <h2>New #1</h2>
           <time datetime="09-24-2022">September 24, 2022</time>
           <br />
-          <p>Lebron James is on pace to surpass...</p>
+          <p>Lebron James is on pace to...</p>
         </article>
         <article class="posts">
           <img class="postImage" src="${wbig3}" />
@@ -54,7 +60,14 @@ export default state => html`
           <h2>New Sheriff in Town</h2>
           <time datetime="09-24-2022">September 24, 2022</time>
           <br />
-          <p>With Lebron entering his 20th year, the face...</p>
+          <p>With Lebron entering his 20th year...</p>
+        </article>
+        <article class="posts">
+          <img class="postImage" src="${gobert}" />
+          <h2>Incompatible</h2>
+          <time datetime="09-24-2022">September 24, 2022</time>
+          <br />
+          <p>With only 75 spots available, it's...</p>
         </article>
         <article class="posts">
           <img class="postImage" src="${snub}" />
@@ -62,6 +75,47 @@ export default state => html`
           <time datetime="09-24-2022">September 24, 2022</time>
           <br />
           <p>With only 75 spots available, it's easy to see...</p>
+        </article>
+        <article class="posts">
+          <img class="postImage" src="${chet}" />
+          <h2>Over Before it Started</h2>
+          <time datetime="09-24-2022">September 24, 2022</time>
+          <br />
+          <p>With only 75 spots available, it's easy to see...</p>
+        </article>
+        <article class="posts">
+          <img class="postImage" src="${jamo}" />
+          <h2>Ready for Takeoff</h2>
+          <time datetime="09-24-2022">September 24, 2022</time>
+          <br />
+          <p>With only 75 spots available, it's easy to see...</p>
+        </article>
+        <article id="post1" class="posts">
+          <img class="postImage" src="${draft}" />
+          <h2>2022 Draft Grades</h2>
+          <time datetime="09-24-2022">September 24, 2022</time>
+          <br />
+          <p>
+            Standing at 7'5 with the ability to play both ends of the floor at a
+            high level...
+          </p>
+        </article>
+        <article id="post1" class="posts">
+          <img class="postImage" src="${kings}" />
+          <h2>16 Year Drought</h2>
+          <time datetime="09-24-2022">September 24, 2022</time>
+          <br />
+          <p>
+            Standing at 7'5 with the ability to play both ends of the floor at a
+            high level...
+          </p>
+        </article>
+        <article class="posts">
+          <img class="postImage poole" src="${pistons}" />
+          <h2>Pistons Geared for Success</h2>
+          <time datetime="09-24-2022">September 24, 2022</time>
+          <br />
+          <p>Is Jordan Poole the future of...</p>
         </article>
       </div>
     </main>

@@ -235,18 +235,10 @@ footer {
 
  /* Post ******************* */
 
-#lebron {
-  z-index: 1;
-}
-
-#kevin {
-  z-index: 2;
-}
-
 #wembyPost {
   margin: 15px;
   padding: 15px;
-  max-width: 1200px;
+
 }
 
 #vicPic {
