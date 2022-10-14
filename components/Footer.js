@@ -2,6 +2,6 @@ import html from "html-literal";
 
 export default links => html`
   <footer>
-    <p>About</p>
+    <p>Est. 2022</p>
   </footer>
 `;

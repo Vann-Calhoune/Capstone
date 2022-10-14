@@ -77,7 +77,7 @@ export default state =>
       </div>
       <div class="dropTarget" id="playerSpace">
         <input type="text" id="rankSearch" placeholder="Search for player" />
-        <div class="playerIcons">
+        <div id="startSpace" class="playerIcons">
           <img
             id="lebron"
             src="${lebron}"

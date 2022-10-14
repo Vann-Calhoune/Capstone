@@ -5,9 +5,14 @@ export default state =>
     <div class="instructions">
       <h1>Numbers Don't Lie!</h1>
       <ul>
-        <li>Enter the names of up to two players you would like to compare.</li>
+        <li>
+          Enter the names of up to two current or former NBA players you would
+          like to compare.
+        </li>
         <li>Select the year of their stats you would like to see.</li>
         <li>Click Submit!</li>
+        <li>Refresh the page to clear the stat boards.</li>
+        <li></li>
       </ul>
     </div>
     <form id="compareForm">
@@ -50,6 +55,18 @@ export default state =>
           <option>1993</option>
           <option>1992</option>
           <option>1991</option>
+          <option>1990</option>
+          <option>1989</option>
+          <option>1988</option>
+          <option>1987</option>
+          <option>1986</option>
+          <option>1985</option>
+          <option>1984</option>
+          <option>1983</option>
+          <option>1982</option>
+          <option>1981</option>
+          <option>1980</option>
+          <option>1979</option>
         </select>
       </div>
       <input id="submit1" type="submit" value="Submit" />
@@ -92,6 +109,18 @@ export default state =>
           <option>1993</option>
           <option>1992</option>
           <option>1991</option>
+          <option>1990</option>
+          <option>1989</option>
+          <option>1988</option>
+          <option>1987</option>
+          <option>1986</option>
+          <option>1985</option>
+          <option>1984</option>
+          <option>1983</option>
+          <option>1982</option>
+          <option>1981</option>
+          <option>1980</option>
+          <option>1979</option>
         </select>
       </div>
     </form>
@@ -101,7 +130,7 @@ export default state =>
     <div class="statTables">
       <table id="table1">
         <tr>
-          <th title="Player Name">Player</th>
+          <th id="leftPlayer" title="Player Name">Player</th>
           <td>${state.name}</td>
         </tr>
         <tr>
@@ -149,7 +178,7 @@ export default state =>
           <td>${state.stats1.ft}</td>
         </tr>
         <tr>
-          <th title="Turnovers per game">TO</th>
+          <th id="leftTo" title="Turnovers per game">TO</th>
           <td>${state.stats1.to}</td>
         </tr>
       </table>
@@ -157,7 +186,7 @@ export default state =>
       <table id="table2">
         <tr>
           <td>${state.name2}</td>
-          <th title="Player Name">Player</th>
+          <th id="rightPlayer" title="Player Name">Player</th>
         </tr>
         <tr>
           <td>${state.season2}</td>
@@ -206,7 +235,7 @@ export default state =>
         </tr>
         <tr>
           <td>${state.stats2.to}</td>
-          <th title="Turnovers per game">TO</th>
+          <th id="rightTo" title="Turnovers per game">TO</th>
         </tr>
       </table>
     </div>
