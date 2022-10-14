@@ -1,4 +1,4 @@
 export default {
-  header: "Post",
+  header: "GOAT Takes",
   view: "Post1"
 };

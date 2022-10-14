@@ -28,7 +28,6 @@ function afterRender(state) {
   if (state.view === "Rank") {
     function handleDragStart(e) {
       e.dataTransfer.setData("text", e.target.id);
-      console.log("Storing ID");
     }
     function handleOverDrop(e) {
       e.preventDefault();
@@ -36,11 +35,14 @@ function afterRender(state) {
       let draggedId = e.dataTransfer.getData("text");
       let refEl = document.getElementById(draggedId);
       //if "drop" occurs in different div detach element from current div, append to new div
-      if (e.target.id === "rankSpace") {
-        refEl.parentNode.removeChild(refEl);
-        e.target.appendChild(refEl);
+      if (e.target.class === "playerDrag") {
+        return;
       }
+      // if (e.target.id === "rankSpace") {
+      refEl.parentNode.removeChild(refEl);
+      e.target.appendChild(refEl);
     }
+    // }
 
     // Drag and Drop
     //save ID
@@ -140,9 +142,15 @@ function afterRender(state) {
           store.Compare.stats1.reb = response.data.data[0].reb;
           store.Compare.stats1.stl = response.data.data[0].stl;
           store.Compare.stats1.blk = response.data.data[0].blk;
-          store.Compare.stats1.fg = response.data.data[0].fg_pct;
-          store.Compare.stats1.fg3 = response.data.data[0].fg3_pct;
-          store.Compare.stats1.ft = response.data.data[0].ft_pct;
+          store.Compare.stats1.fg = (
+            response.data.data[0].fg_pct * 100
+          ).toFixed(1);
+          store.Compare.stats1.fg3 = (
+            response.data.data[0].fg3_pct * 100
+          ).toFixed(1);
+          store.Compare.stats1.ft = (
+            response.data.data[0].ft_pct * 100
+          ).toFixed(1);
           store.Compare.stats1.to = response.data.data[0].turnover;
           console.log(store.Compare);
         })
@@ -164,9 +172,15 @@ function afterRender(state) {
           store.Compare.stats2.reb = [response.data.data[0].reb];
           store.Compare.stats2.stl = [response.data.data[0].stl];
           store.Compare.stats2.blk = [response.data.data[0].blk];
-          store.Compare.stats2.fg = [response.data.data[0].fg_pct];
-          store.Compare.stats2.fg3 = [response.data.data[0].fg3_pct];
-          store.Compare.stats2.ft = [response.data.data[0].ft_pct];
+          store.Compare.stats2.fg = (
+            response.data.data[0].fg_pct * 100
+          ).toFixed(1);
+          store.Compare.stats2.fg3 = (
+            response.data.data[0].fg3_pct * 100
+          ).toFixed(1);
+          store.Compare.stats2.ft = (
+            response.data.data[0].ft_pct * 100
+          ).toFixed(1);
           store.Compare.stats2.to = response.data.data[0].turnover;
           console.log(store.Compare);
         })
