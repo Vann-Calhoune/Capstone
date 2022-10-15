@@ -3,9 +3,9 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const comments = require("./routers/comment");
-// const comments = require("./routers/comment");
 
 dotenv.config();
+
 // Initialize the Express application
 const app = express();
 

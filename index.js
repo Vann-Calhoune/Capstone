@@ -20,26 +20,30 @@ function render(state = store.Home) {
   router.updatePageLinks();
 }
 
+function handleDragStart(e) {
+  e.dataTransfer.setData("text", e.target.id);
+}
+
+function handleOverDrop(e) {
+  e.preventDefault();
+  //Stores dragged elements ID and then the reference to dragged element
+  let draggedId = e.dataTransfer.getData("text");
+  let refEl = document.getElementById(draggedId);
+  //if "drop" occurs in different div detach element from current div, append to new div
+  if (e.target.id === "rankSpace" || e.target.id === "playerSpace") {
+    refEl.parentNode.removeChild(refEl);
+    e.target.appendChild(refEl);
+  }
+}
+
 function afterRender(state) {
   //Toggle Icons
   document.querySelector(".fa-basketball").addEventListener("click", () => {
     document.querySelector("#navigation").classList.toggle("hidden--mobile");
   });
+
   if (state.view === "Rank") {
-    function handleDragStart(e) {
-      e.dataTransfer.setData("text", e.target.id);
-    }
-    function handleOverDrop(e) {
-      e.preventDefault();
-      //Stores dragged elements ID and then the reference to dragged element
-      let draggedId = e.dataTransfer.getData("text");
-      let refEl = document.getElementById(draggedId);
-      //if "drop" occurs in different div detach element from current div, append to new div
-
-      refEl.parentNode.removeChild(refEl);
-      e.target.appendChild(refEl);
-    }
-
+    // };
     // Drag and Drop
     //save ID
 
@@ -62,10 +66,10 @@ function afterRender(state) {
 
     // variables for input bar and player images
     let searchBox = document.querySelector("#rankSearch");
-    let images = document.querySelectorAll("img");
 
     //hide all players when you begin typing
     searchBox.oninput = () => {
+      let images = document.querySelectorAll("#playerSpace img");
       images.forEach(hide => (hide.style.display = "none"));
       let value = searchBox.value;
       //if user input value = player id, show player
