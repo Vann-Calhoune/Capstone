@@ -1,4 +1,5 @@
 export default {
   header: "GOAT Takes",
-  view: "Post1"
+  view: "Post1",
+  comments: []
 };

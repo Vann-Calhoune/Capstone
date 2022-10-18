@@ -68,13 +68,17 @@ export default state => html`
       distinctio, pariatur aliquid consequuntur.
     </p>
     <br />
-    <form id="commentForm">
+    <form id="commentForm" method="POST" action="">
       <p>Leave a Comment!</p>
       <input id="nameArea" type="text" required placeholder="Enter your name" />
       <textarea id="leaveComment"></textarea>
       <input id="commentSubmit" type="submit" />
     </form>
     <br />
-
   </div>
+  <ul>
+    ${state.comments.map(comment => {
+      return `<li>${comment.name} --- ${comment.comment}</li>`;
+    })}
+  </ul>
 `;
