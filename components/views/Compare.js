@@ -12,7 +12,9 @@ export default state =>
         <li>Select the year of their stats you would like to see.</li>
         <li>Click Submit!</li>
         <li>Refresh the page to clear the stat boards.</li>
-        <li></li>
+        <li>
+          If stat board displays are empty, player did not play that year.
+        </li>
       </ul>
     </div>
     <form id="compareForm">

@@ -299,7 +299,7 @@ footer {
   #playerSpace {
     border: 2px solid black;
     overflow: auto;
-    width: 60vw;
+    width: 50vw;
     height: 90vh;
     margin-left: 15px;
     border-radius: 10px;
@@ -324,14 +324,6 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
-  }
-
-  #search1, #search2 {
-    height: 5vh;
-    width: 15vw;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
   }
 
 
@@ -382,6 +374,7 @@ footer {
     width: 100px;
     border-radius: 10px;
     border: 2px solid navy;
+    overflow: auto;
 
 
   }
@@ -399,15 +392,24 @@ footer {
 
   .rankZones {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 15px;
     border: 2px solid  black;
     border-radius: 10px;
     padding: 5px;
+    overflow: auto;
+    height: 90vh;
+    width: 50vw;
   }
 
 
-  @media (max-width: 660px) {
+  @media (max-width: 870px) {
+    .rankZones {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 550px) {
     .rankZones {
       grid-template-columns: 1fr;
     }
