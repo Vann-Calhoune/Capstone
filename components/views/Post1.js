@@ -1,8 +1,9 @@
 import html from "html-literal";
-import vic from "../../assets/images/vicwemby.jpeg";
+import vic from "../../assets/Images/vicwemby.jpeg";
 
 export default state => html`
-  <div id="wembyPost">
+  <div id="completePage">
+    <!-- <div id="wembyPost"> -->
     <img id="vicPic" src="${vic}" />
     <h1>Is Wembanyama Worth It?</h1>
     <p>
@@ -70,15 +71,17 @@ export default state => html`
     <br />
     <form id="commentForm" method="POST" action="">
       <p>Leave a Comment!</p>
-      <input id="nameArea" type="text" required placeholder="Enter your name" />
-      <textarea id="leaveComment"></textarea>
+      <input id="name" type="text" required placeholder="Enter your name" />
+      <textarea id="comment"></textarea>
       <input id="commentSubmit" type="submit" />
     </form>
     <br />
+    <!-- </div> -->
+    <ul id="commentArea">
+      ${state.comments.map(comment => {
+        return `<li><h3>${comment.name}</h3>
+       ${comment.comment}</li>`;
+      })}
+    </ul>
   </div>
-  <ul>
-    ${state.comments.map(comment => {
-      return `<li>${comment.name} --- ${comment.comment}</li>`;
-    })}
-  </ul>
 `;

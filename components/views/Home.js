@@ -42,11 +42,18 @@ export default state => html`
           <p>Is Jordan Poole the future of the...</p>
         </article>
         <article class="posts">
+          <img class="postImage" src="${galuka}" />
+          <h2>New Sheriff in Town</h2>
+          <time datetime="09-24-2022">September 24, 2022</time>
+          <br />
+          <p>With Lebron entering his 20th year...</p>
+        </article>
+        <article class="posts">
           <img class="postImage" src="${lbjkaj}" />
           <h2>New #1</h2>
           <time datetime="09-24-2022">September 24, 2022</time>
           <br />
-          <p>Lebron James is on pace to...</p>
+          <p>Lebron James is on pace to surp...</p>
         </article>
         <article class="posts">
           <img class="postImage" src="${wbig3}" />
@@ -55,19 +62,13 @@ export default state => html`
           <br />
           <p>The Warriors begin their hunt for...</p>
         </article>
-        <article class="posts">
-          <img class="postImage" src="${galuka}" />
-          <h2>New Sheriff in Town</h2>
-          <time datetime="09-24-2022">September 24, 2022</time>
-          <br />
-          <p>With Lebron entering his 20th year...</p>
-        </article>
+
         <article class="posts">
           <img class="postImage" src="${gobert}" />
           <h2>Incompatible</h2>
           <time datetime="09-24-2022">September 24, 2022</time>
           <br />
-          <p>With only 75 spots available, it's...</p>
+          <p>The jazz thought they had two franc...</p>
         </article>
         <article class="posts">
           <img class="postImage" src="${snub}" />
@@ -83,13 +84,6 @@ export default state => html`
           <br />
           <p>With only 75 spots available, it's easy to see...</p>
         </article>
-        <article class="posts">
-          <img class="postImage" src="${jamo}" />
-          <h2>Ready for Takeoff</h2>
-          <time datetime="09-24-2022">September 24, 2022</time>
-          <br />
-          <p>With only 75 spots available, it's easy to see...</p>
-        </article>
         <article id="post1" class="posts">
           <img class="postImage" src="${draft}" />
           <h2>2022 Draft Grades</h2>
@@ -99,6 +93,13 @@ export default state => html`
             Standing at 7'5 with the ability to play both ends of the floor at a
             high level...
           </p>
+        </article>
+        <article class="posts">
+          <img class="postImage" src="${jamo}" />
+          <h2>Ready for Takeoff</h2>
+          <time datetime="09-24-2022">September 24, 2022</time>
+          <br />
+          <p>With only 75 spots available, it's easy to see...</p>
         </article>
         <article id="post1" class="posts">
           <img class="postImage" src="${kings}" />

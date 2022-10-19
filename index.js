@@ -43,15 +43,6 @@ function afterRender(state) {
   });
 
   if (state.view === "Post1") {
-    axios
-      .get(`${process.env.COMMENT_URL}`)
-      .then(response => {
-        store.Post1.comments = response.data;
-      })
-      .catch(error => {
-        console.log("It puked", error);
-      });
-
     document.querySelector("form").addEventListener("submit", e => {
       e.preventDefault();
 
@@ -66,7 +57,7 @@ function afterRender(state) {
         .post(`${process.env.COMMENT_URL}`, requestData)
         .then(response => {
           store.Post1.comments.push(response.data);
-          // router.navigate("/Post1");
+          router.navigate("/Post1");
         })
         .catch(error => {
           console.log("It puked", error);
@@ -238,6 +229,40 @@ function afterRender(state) {
     });
   }
 }
+
+router.hooks({
+  before: (done, params) => {
+    const view =
+      params && params.data && params.data.view
+        ? capitalize(params.data.view)
+        : "Home";
+
+    // Add a switch case statement to handle multiple routes
+    switch (view) {
+      case "Post1":
+        axios
+          .get(`${process.env.COMMENT_URL}`)
+          .then(response => {
+            store.Post1.comments = response.data;
+            done();
+          })
+          .catch(error => {
+            console.log("It puked", error);
+          });
+        break;
+      default:
+        done();
+    }
+  },
+  already: params => {
+    const view =
+      params && params.data && params.data.view
+        ? capitalize(params.data.view)
+        : "Home";
+
+    render(store[view]);
+  }
+});
 
 router
   .on({
