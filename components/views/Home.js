@@ -25,98 +25,112 @@ export default state => html`
         <a id="showPost" href="/Post1"
           ><article id="post1" class="posts">
             <img class="postImage" src="${vic}" />
-            <h2>Is Wembanyama Worth It?</h2>
-            <time datetime="09-24-2022">September 24, 2022</time>
-            <br />
-            <p>
-              Standing at 7'5 with the ability to play both ends of the floor at
-              a high level...
-            </p>
+            <div class="postContent">
+              <h2>Is Wembanyama Worth It?</h2>
+              <br />
+              <p>
+                Standing at 7'5 with the ability to play both ends of the floor
+                at a high level...
+              </p>
+            </div>
           </article></a
         >
         <article class="posts">
           <img class="postImage poole" src="${poole}" />
-          <h2>Poole Party Over?</h2>
-          <time datetime="09-24-2022">September 24, 2022</time>
-          <br />
-          <p>Is Jordan Poole the future of the...</p>
+          <div class="postContent">
+            <h2>Poole Party Over?</h2>
+            <br />
+
+            <p>Is Jordan Poole the future of the...</p>
+          </div>
         </article>
         <article class="posts">
           <img class="postImage" src="${galuka}" />
-          <h2>New Sheriff in Town</h2>
-          <time datetime="09-24-2022">September 24, 2022</time>
-          <br />
-          <p>With Lebron entering his 20th year...</p>
+          <div class="postContent">
+            <h2>New Sheriff in Town</h2>
+            <br />
+            <p>With Lebron entering his 20th year...</p>
+          </div>
         </article>
         <article class="posts">
           <img class="postImage" src="${lbjkaj}" />
-          <h2>New #1</h2>
-          <time datetime="09-24-2022">September 24, 2022</time>
-          <br />
-          <p>Lebron James is on pace to surp...</p>
+          <div class="postContent">
+            <h2>New #1</h2>
+            <br />
+            <p>Lebron James is on pace to surp...</p>
+          </div>
         </article>
         <article class="posts">
           <img class="postImage" src="${wbig3}" />
-          <h2>Eyes on 5</h2>
-          <time datetime="09-24-2022">September 24, 2022</time>
-          <br />
-          <p>The Warriors begin their hunt for...</p>
+          <div class="postContent">
+            <h2>Eyes on 5</h2>
+            <br />
+            <p>The Warriors begin their hunt for...</p>
+          </div>
         </article>
 
         <article class="posts">
           <img class="postImage" src="${gobert}" />
-          <h2>Incompatible</h2>
-          <time datetime="09-24-2022">September 24, 2022</time>
-          <br />
-          <p>The jazz thought they had two franc...</p>
+          <div class="postContent">
+            <h2>Incompatible</h2>
+            <br />
+            <p>The jazz thought they had two franc...</p>
+          </div>
         </article>
         <article class="posts">
           <img class="postImage" src="${snub}" />
-          <h2>Snub of the Century</h2>
-          <time datetime="09-24-2022">September 24, 2022</time>
-          <br />
-          <p>With only 75 spots available, it's easy to see...</p>
+          <div class="postContent">
+            <h2>Snub of the Century</h2>
+            <br />
+            <p>With only 75 spots available, it's easy to see...</p>
+          </div>
         </article>
         <article class="posts">
           <img class="postImage" src="${chet}" />
-          <h2>Over Before it Started</h2>
-          <time datetime="09-24-2022">September 24, 2022</time>
-          <br />
-          <p>With only 75 spots available, it's easy to see...</p>
+          <div class="postContent">
+            <h2>Over Before it Started</h2>
+            <br />
+            <p>After being selected #2 overall in this past years draft...</p>
+          </div>
         </article>
         <article id="post1" class="posts">
           <img class="postImage" src="${draft}" />
-          <h2>2022 Draft Grades</h2>
-          <time datetime="09-24-2022">September 24, 2022</time>
-          <br />
-          <p>
-            Standing at 7'5 with the ability to play both ends of the floor at a
-            high level...
-          </p>
+          <div class="postContent">
+            <h2>2022 Draft Grades</h2>
+            <br />
+            <p>
+              This draft class was a mixed bag. There were a few studs at the...
+            </p>
+          </div>
         </article>
         <article class="posts">
           <img class="postImage" src="${jamo}" />
-          <h2>Ready for Takeoff</h2>
-          <time datetime="09-24-2022">September 24, 2022</time>
-          <br />
-          <p>With only 75 spots available, it's easy to see...</p>
+          <div class="postContent">
+            <h2>Ready for Takeoff</h2>
+            <br />
+            <p>After coming off a deep playoff run, the Memphis Grizzlies...</p>
+          </div>
         </article>
         <article id="post1" class="posts">
           <img class="postImage" src="${kings}" />
-          <h2>16 Year Drought</h2>
-          <time datetime="09-24-2022">September 24, 2022</time>
-          <br />
-          <p>
-            Standing at 7'5 with the ability to play both ends of the floor at a
-            high level...
-          </p>
+          <div class="postContent">
+            <h2>16 Year Drought</h2>
+            <br />
+            <p>
+              The Sacramento Kings have not sniffed a post-season game in...
+            </p>
+          </div>
         </article>
         <article class="posts">
           <img class="postImage poole" src="${pistons}" />
-          <h2>Pistons Geared for Success</h2>
-          <time datetime="09-24-2022">September 24, 2022</time>
-          <br />
-          <p>Is Jordan Poole the future of...</p>
+          <div class="postContent">
+            <h2>Pistons Geared for Success</h2>
+            <br />
+            <p>
+              The Detroit Pistons revamped their roster and have look to be
+              much..
+            </p>
+          </div>
         </article>
       </div>
     </main>

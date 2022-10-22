@@ -3,9 +3,9 @@ import vic from "../../assets/Images/vicwemby.jpeg";
 
 export default state => html`
   <div id="completePage">
-    <!-- <div id="wembyPost"> -->
-    <img id="vicPic" src="${vic}" />
     <h1>Is Wembanyama Worth It?</h1>
+    <img id="vicPic" src="${vic}" />
+    <br />
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
       deserunt nam accusamus, nisi totam assumenda! Repudiandae sunt ullam quasi

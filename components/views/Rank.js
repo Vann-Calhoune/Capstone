@@ -493,11 +493,11 @@ export default state =>
             title="Anthony Davis"
           />
           <img
-            id="ray"
+            id="allen"
             src="${allen}"
             draggable="true"
             class="playerDrag"
-            title="Ray Allen"
+            title="Allen Iverson"
           />
           <img
             id="paul"

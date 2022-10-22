@@ -130,9 +130,6 @@ function afterRender(state) {
           `https://www.balldontlie.io/api/v1/players?search=${store.Compare.name}`
         )
         .then(response => {
-          // if (response.data.data[0] === undefined) {
-          //   alert("Player 1 did not play this year");
-          // }
           if (response.data.data.length > 1) {
             alert("Specify Player 1's name");
           } else {
@@ -149,9 +146,6 @@ function afterRender(state) {
           `https://www.balldontlie.io/api/v1/players?search=${store.Compare.name2}`
         )
         .then(response => {
-          // if (response.data.data[0] === undefined) {
-          //   alert("Player 2 did not play this year");
-          // }
           if (response.data.data.length > 1) {
             alert("Specify Player 2's name");
           } else {
