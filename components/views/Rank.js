@@ -493,28 +493,28 @@ export default state =>
             title="Anthony Davis"
           />
           <img
-            id="ray"
+            id="allen"
             src="${allen}"
             draggable="true"
             class="playerDrag"
-            title="Ray Allen"
+            title="Allen Iverson"
           />
           <img
-            id="arizin"
+            id="paul"
             src="${arizin}"
             draggable="true"
             class="playerDrag"
             title="Paul Arizin"
           />
           <img
-            id="barkley"
+            id="charles"
             src="${barkley}"
             draggable="true"
             class="playerDrag"
             title="Charles Barkley"
           />
           <img
-            id="bing"
+            id="dave"
             src="${bing}"
             draggable="true"
             class="playerDrag"
@@ -536,7 +536,7 @@ export default state =>
           />
 
           <img
-            id="cousy"
+            id="bob"
             src="${cousy}"
             draggable="true"
             class="playerDrag"
@@ -544,7 +544,7 @@ export default state =>
           />
 
           <img
-            id="cowens"
+            id="dave"
             src="${cowens}"
             draggable="true"
             class="playerDrag"
@@ -552,7 +552,7 @@ export default state =>
           />
 
           <img
-            id="cp3"
+            id="chris"
             src="${cp3}"
             draggable="true"
             class="playerDrag"
@@ -560,7 +560,7 @@ export default state =>
           />
 
           <img
-            id="cunningham"
+            id="billy"
             src="${cunningham}"
             draggable="true"
             class="playerDrag"
@@ -568,7 +568,7 @@ export default state =>
           />
 
           <img
-            id="debuscher"
+            id="dave"
             src="${debuscher}"
             draggable="true"
             class="playerDrag"
@@ -592,7 +592,7 @@ export default state =>
           />
 
           <img
-            id="drob"
+            id="david"
             src="${drob}"
             draggable="true"
             class="playerDrag"
@@ -613,35 +613,35 @@ export default state =>
             title="Elvin Hayes"
           />
           <img
-            id="erving"
+            id="julius"
             src="${erving}"
             draggable="true"
             class="playerDrag"
             title="Julius Erving"
           />
           <img
-            id="ewing"
+            id="patrick"
             src="${ewing}"
             draggable="true"
             class="playerDrag"
             title="Patrick Ewing"
           />
           <img
-            id="frazier"
+            id="walt"
             src="${frazier}"
             draggable="true"
             class="playerDrag"
             title="Walt Frazier"
           />
           <img
-            id="gervin"
+            id="george"
             src="${gervin}"
             draggable="true"
             class="playerDrag"
             title="Stephen Curry"
           />
           <img
-            id="gp"
+            id="gary"
             src="${gp}"
             draggable="true"
             class="playerDrag"
@@ -665,7 +665,7 @@ export default state =>
           />
 
           <img
-            id="hardenHead"
+            id="james"
             src="${hardenHead}"
             draggable="true"
             class="playerDrag"
@@ -673,7 +673,7 @@ export default state =>
           />
 
           <img
-            id="havlicek"
+            id="john"
             src="${havlicek}"
             draggable="true"
             class="playerDrag"
@@ -681,7 +681,7 @@ export default state =>
           />
 
           <img
-            id="iThomas"
+            id="isiah"
             src="${iThomas}"
             draggable="true"
             class="playerDrag"
@@ -689,7 +689,7 @@ export default state =>
           />
 
           <img
-            id="jKidd"
+            id="jason"
             src="${jKidd}"
             draggable="true"
             class="playerDrag"
@@ -705,7 +705,7 @@ export default state =>
           />
 
           <img
-            id="kg"
+            id="kevin"
             src="${kg}"
             draggable="true"
             class="playerDrag"
@@ -719,42 +719,42 @@ export default state =>
             title="Lenny Wilkins"
           />
           <img
-            id="lillard"
+            id="damian"
             src="${lillard}"
             draggable="true"
             class="playerDrag"
             title="Damian Lillard"
           />
           <img
-            id="lucas"
+            id="jerryLuc"
             src="${lucas}"
             draggable="true"
             class="playerDrag"
             title="Jerry Lucas"
           />
           <img
-            id="malone"
+            id="karl"
             src="${malone}"
             draggable="true"
             class="playerDrag"
             title="Karl Malone"
           />
           <img
-            id="mcadoo"
+            id="bobMca"
             src="${mcadoo}"
             draggable="true"
             class="playerDrag"
             title="Bob Mcadoo"
           />
           <img
-            id="mchale"
+            id="kevin"
             src="${mchale}"
             draggable="true"
             class="playerDrag"
             title="Kevin Mchale"
           />
           <img
-            id="mikan"
+            id="george"
             src="${mikan}"
             draggable="true"
             class="playerDrag"
@@ -770,7 +770,7 @@ export default state =>
           />
 
           <img
-            id="nash"
+            id="steve"
             src="${nash}"
             draggable="true"
             class="playerDrag"
@@ -778,7 +778,7 @@ export default state =>
           />
 
           <img
-            id="nate"
+            id="nateArch"
             src="${nate}"
             draggable="true"
             class="playerDrag"
@@ -794,7 +794,7 @@ export default state =>
           />
 
           <img
-            id="parish"
+            id="robert"
             src="${parish}"
             draggable="true"
             class="playerDrag"
@@ -802,7 +802,7 @@ export default state =>
           />
 
           <img
-            id="pearl"
+            id="earl"
             src="${pearl}"
             draggable="true"
             class="playerDrag"
@@ -810,7 +810,7 @@ export default state =>
           />
 
           <img
-            id="pettit"
+            id="bobPet"
             src="${pettit}"
             draggable="true"
             class="playerDrag"
@@ -818,21 +818,21 @@ export default state =>
           />
 
           <img
-            id="pierce"
+            id="paul"
             src="${pierce}"
             draggable="true"
             class="playerDrag"
             title="Paul Pierce"
           />
           <img
-            id="pippen"
+            id="scottie"
             src="${pippen}"
             draggable="true"
             class="playerDrag"
             title="Scottie Pippen"
           />
           <img
-            id="pistol"
+            id="pete"
             src="${pistol}"
             draggable="true"
             class="playerDrag"
@@ -853,21 +853,21 @@ export default state =>
             title="Reggie Miller"
           />
           <img
-            id="rickB"
+            id="rick"
             src="${rickB}"
             draggable="true"
             class="playerDrag"
             title="Rick Barry"
           />
           <img
-            id="rodman"
+            id="dennis"
             src="${rodman}"
             draggable="true"
             class="playerDrag"
             title="Dennis Rodman"
           />
           <img
-            id="samJ"
+            id="sam"
             src="${samJ}"
             draggable="true"
             class="playerDrag"
@@ -875,7 +875,7 @@ export default state =>
           />
 
           <img
-            id="shaq"
+            id="shaquille"
             src="${shaq}"
             draggable="true"
             class="playerDrag"
@@ -883,7 +883,7 @@ export default state =>
           />
 
           <img
-            id="sharman"
+            id="billSharman"
             src="${sharman}"
             draggable="true"
             class="playerDrag"
@@ -891,7 +891,7 @@ export default state =>
           />
 
           <img
-            id="stockton"
+            id="john"
             src="${stockton}"
             draggable="true"
             class="playerDrag"
@@ -899,7 +899,7 @@ export default state =>
           />
 
           <img
-            id="thurmond"
+            id="nate"
             src="${thurmond}"
             draggable="true"
             class="playerDrag"
@@ -907,7 +907,7 @@ export default state =>
           />
 
           <img
-            id="walton"
+            id="billWalt"
             src="${walton}"
             draggable="true"
             class="playerDrag"
@@ -923,7 +923,7 @@ export default state =>
           />
 
           <img
-            id="west"
+            id="jerry"
             src="${west}"
             draggable="true"
             class="playerDrag"
@@ -931,14 +931,14 @@ export default state =>
           />
 
           <img
-            id="westbrookHead"
+            id="russell"
             src="${westbrookHead}"
             draggable="true"
             class="playerDrag"
             title="Russell Westbrook"
           />
           <img
-            id="wilkins"
+            id="Dominique"
             src="${wilkins}"
             draggable="true"
             class="playerDrag"
@@ -952,7 +952,7 @@ export default state =>
             title="Willis Reed"
           />
           <img
-            id="worthy"
+            id="james"
             src="${worthy}"
             draggable="true"
             class="playerDrag"
