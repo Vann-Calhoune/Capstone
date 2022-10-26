@@ -36,45 +36,25 @@ export default state => html`
           </article></a
         >
         <article class="posts">
-          <img class="postImage poole" src="${poole}" />
-          <div class="postContent">
-            <h2>Poole Party Over?</h2>
-            <br />
-
-            <p>Is Jordan Poole the future of the...</p>
-          </div>
-        </article>
-        <article class="posts">
-          <img class="postImage" src="${galuka}" />
-          <div class="postContent">
-            <h2>New Sheriff in Town</h2>
-            <br />
-            <p>With Lebron entering his 20th year...</p>
-          </div>
-        </article>
-        <article class="posts">
           <img class="postImage" src="${lbjkaj}" />
           <div class="postContent">
             <h2>New #1</h2>
             <br />
-            <p>Lebron James is on pace to surp...</p>
+            <p>
+              Lebron James is on pace to surpass Kareem Abdul-Jabbar as the
+              NBA's
+            </p>
           </div>
         </article>
-        <article class="posts">
-          <img class="postImage" src="${wbig3}" />
+        <article id="post1" class="posts">
+          <img class="postImage" src="${draft}" />
           <div class="postContent">
-            <h2>Eyes on 5</h2>
+            <h2>2022 Draft Grades</h2>
             <br />
-            <p>The Warriors begin their hunt for...</p>
-          </div>
-        </article>
-
-        <article class="posts">
-          <img class="postImage" src="${gobert}" />
-          <div class="postContent">
-            <h2>Incompatible</h2>
-            <br />
-            <p>The jazz thought they had two franc...</p>
+            <p>
+              This draft class was a mixed bag. There were a few studs at the
+              top, solid players in the middle...
+            </p>
           </div>
         </article>
         <article class="posts">
@@ -82,7 +62,10 @@ export default state => html`
           <div class="postContent">
             <h2>Snub of the Century</h2>
             <br />
-            <p>With only 75 spots available, it's easy to see...</p>
+            <p>
+              With only 75 spots available, it's easy to see why some of the
+              best NBA...
+            </p>
           </div>
         </article>
         <article class="posts">
@@ -93,22 +76,23 @@ export default state => html`
             <p>After being selected #2 overall in this past years draft...</p>
           </div>
         </article>
-        <article id="post1" class="posts">
-          <img class="postImage" src="${draft}" />
+        <article class="posts">
+          <img class="postImage" src="${wbig3}" />
           <div class="postContent">
-            <h2>2022 Draft Grades</h2>
+            <h2>Eyes on 5</h2>
             <br />
             <p>
-              This draft class was a mixed bag. There were a few studs at the...
+              The Warriors begin their hunt for their fifth ring in 8 years.
+              With their core...
             </p>
           </div>
         </article>
         <article class="posts">
-          <img class="postImage" src="${jamo}" />
+          <img class="postImage" src="${gobert}" />
           <div class="postContent">
-            <h2>Ready for Takeoff</h2>
+            <h2>Incompatible</h2>
             <br />
-            <p>After coming off a deep playoff run, the Memphis Grizzlies...</p>
+            <p>The jazz thought they had two franc...</p>
           </div>
         </article>
         <article id="post1" class="posts">
@@ -122,6 +106,15 @@ export default state => html`
           </div>
         </article>
         <article class="posts">
+          <img class="postImage" src="${jamo}" />
+          <div class="postContent">
+            <h2>Ready for Takeoff</h2>
+            <br />
+            <p>After coming off a deep playoff run, the Memphis Grizzlies...</p>
+          </div>
+        </article>
+
+        <article class="posts">
           <img class="postImage poole" src="${pistons}" />
           <div class="postContent">
             <h2>Pistons Geared for Success</h2>
@@ -130,6 +123,22 @@ export default state => html`
               The Detroit Pistons revamped their roster and have look to be
               much..
             </p>
+          </div>
+        </article>
+        <article class="posts">
+          <img class="postImage poole" src="${poole}" />
+          <div class="postContent">
+            <h2>Poole Party Over?</h2>
+            <br />
+            <p>Is Jordan Poole the future of the...</p>
+          </div>
+        </article>
+        <article class="posts">
+          <img class="postImage" src="${galuka}" />
+          <div class="postContent">
+            <h2>New Sheriff in Town</h2>
+            <br />
+            <p>With Lebron entering his 20th year...</p>
           </div>
         </article>
       </div>

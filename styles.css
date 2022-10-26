@@ -1,8 +1,8 @@
 *{
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   /* border: 1px solid black; */
+  box-sizing: border-box;
 
 }
 
@@ -20,15 +20,27 @@ footer {
   width: 100vw;
   height: auto;
   font-size: 20px;
+  font-family: 'Bangers', cursive;
+  font-size: 25px;
 }
 
 
 /* start nav ******************** */
+
+
 .headerBar {
   display: flex;
   flex-direction: row;
   background-color: #FBC403;
   width: 100vw;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 15px;
+  padding-bottom: 18px;
+  justify-content: end;
+  font-size: 20px;
+  text-decoration: none;
+  outline: none;
 }
 
 header {
@@ -51,41 +63,30 @@ header {
   box-shadow: 1px 1px 1px 1px black;
   color: black;
   font-family: 'Bangers', cursive;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .topNav:hover {
   color: white;
 }
 
-#nav-bar{
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding: 15px;
-  justify-content: end;
-  font-size: 20px;
-  text-decoration: none;
-  outline: none;
-
-}
 
 @media (min-width: 550px) {
   nav > .fa-basketball {
      display: none;
    }
 
+
+
 }
+
+
  @media (max-width: 550px) {
    .hidden--mobile {
      display: none;
    }
 
-   #navigation {
-    flex-direction: column;
-     background-color: #FBC403;
-     right: 0;
-     top: 70px;
-   }
+
 
  }
 
@@ -124,7 +125,6 @@ margin: 5px;
   display: flex;
   flex-direction: column;
   margin: 1.5rem;
-  /* padding: 1rem; */
   border-radius:  20px ;
   box-shadow: 3px 3px 3px 3px grey;
   background-color: white;
@@ -246,15 +246,15 @@ footer {
 
  /* Post ******************* */
 
-#wembyPost {
+/* #wembyPost {
   margin: 80px;
   padding: 30px;
   display: flex;
   flex-direction: column;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   max-width: 1000px;
 
-}
+} */
 
 #vicPic {
   border-radius: 10px 10px 0 0;
@@ -284,38 +284,44 @@ footer {
   width: 100px;
 }
 
-h1 {
+#topPost {
   font-family: 'Bangers', cursive;
-  font-size: 35px;
+  font-size: 4vw;
+  text-align: center;
 }
 
 
-/* @media (min-width: 1200px) {
-  #wembyPost {
-    border:1px solid black;
-    align-items: center;
-}
-} */
 
 #completePage {
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* border: 1px solid black; */
-  margin: 1rem;
   margin: 50px;
   padding: 30px;
   align-items: center;
 }
 
 #commentArea {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin: 15px;
   padding: 15px;
   list-style: none;
   line-height: 35px;
   border-radius: 10px;
-  max-width: 800px;
+  width: 90vw;
+}
+
+#fullBlog {
+  display: flex;
+  flex-direction: column;
+  margin: 25px;
+  padding: 10px;
+  padding-top: 0px;
+  margin-top: 0px;
+  /* border: 1px solid black; */
+max-width: 1200px;
+
 }
 
  /* end post */
