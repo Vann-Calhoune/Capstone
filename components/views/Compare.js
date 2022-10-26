@@ -13,7 +13,8 @@ export default state =>
         <li>Click Submit!</li>
         <li>Refresh the page to clear the stat boards.</li>
         <li>
-          If stat board displays are empty, player did not play that year.
+          If stat board is empty, player did not play that year or player does
+          not exist.
         </li>
       </ul>
     </div>
