@@ -16,4 +16,6 @@ This page allows you to rank the NBA's 75th anniversary team. The page uses drag
 
 This page allows you to enter two former or current NBA players' names and select a season for each. Once you click submit, the table on the page will then populate with the slected playeers stats for the selected season(s). 
 
+## View App
 
+https://goattakes.netlify.app/
