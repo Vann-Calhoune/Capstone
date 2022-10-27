@@ -20,6 +20,7 @@ function render(state = store.Home) {
   router.updatePageLinks();
 }
 
+// starting drag function
 function handleDragStart(e) {
   e.dataTransfer.setData("text", e.target.id);
 }
@@ -42,6 +43,7 @@ function afterRender(state) {
     document.querySelector("#navigation").classList.toggle("hidden--mobile");
   });
 
+  // Adding a new comment to database
   if (state.view === "Post1") {
     document.querySelector("form").addEventListener("submit", e => {
       e.preventDefault();
@@ -124,7 +126,7 @@ function afterRender(state) {
       store.Compare.season = document.getElementById("playerOneYear").value;
       store.Compare.season2 = document.getElementById("playerTwoYear").value;
 
-      // API call to get player ID using search value
+      // API call to get player IDs using search value
       await axios
         .get(
           `https://www.balldontlie.io/api/v1/players?search=${store.Compare.name}`
@@ -157,7 +159,7 @@ function afterRender(state) {
           console.log(err);
         });
 
-      // API call to get player stats using newly created user ID
+      // API call to get player stats using newly received user IDs
       await axios
         .get(
           `https://www.balldontlie.io/api/v1/season_averages?season=${store.Compare.season}&player_ids[]=${store.Compare.id}`
@@ -232,6 +234,7 @@ router.hooks({
         : "Home";
 
     // Add a switch case statement to handle multiple routes
+    // Gathering stored comments from database
     switch (view) {
       case "Post1":
         axios

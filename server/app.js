@@ -59,5 +59,5 @@ app.use("/comment", comments);
 
 const PORT = process.env.PORT || 4040; // we use || to provide a default value
 // Tell the Express app to start listening
-// Let the humans know I am running and listening on 4040
+// Let the humans know I am running and listening on PORT
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
