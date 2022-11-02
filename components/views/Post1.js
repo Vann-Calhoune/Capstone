@@ -8,67 +8,81 @@ export default state => html`
       <img id="vicPic" src="${vic}" />
       <br />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-        deserunt nam accusamus, nisi totam assumenda! Repudiandae sunt ullam
-        quasi velit, similique minima id cumque nemo quidem error earum
-        repellendus ab, magnam dignissimos sit? Impedit soluta, dolor in eum
-        iusto beatae inventore maiores modi doloribus porro. Natus accusamus ex
-        ab ipsam laudantium. Numquam, culpa minus. In vero fugit nulla possimus?
-        Fuga vitae, ipsam rerum debitis odit earum illum a? Veritatis ipsam ex
-        nulla cumque laboriosam, officia, voluptatem autem officiis, nam soluta
-        esse temporibus consectetur sit beatae ipsa repellendus cum. Provident
-        porro corporis, ex quas iusto quibusdam repudiandae aliquid esse
-        excepturi maxime.
+        On a rainy fall afternoon in the Parisian suburb of Nanterre, François
+        Salaün sat outside a cafe in a suit taking drags from a vape pen. He
+        once taught at a high school around the corner, where, three years ago,
+        he taught a student named Victor Wembanyama, who had to duck to get into
+        classrooms and knew an unusual array of facts about the world. Salaün
+        recalled asking the students in his French class to write a short story
+        about the realization of a dream. Some shared their hopes of becoming
+        famous basketball players, but not Wembanyama, though he was well on his
+        way to that dream. In fact, Wembanyama didn’t really follow the prompt
+        at all. Instead, he and a friend wrote a tale titled “Alice et Jules,”
+        about a married couple whose lives were upended when Jules drove while
+        drunk, crashed, fell into a coma and woke up having lost contact with
+        Alice. In the end, they reunited. Wembanyama liked to do things his way,
+        and Salaün didn’t mind so much. He remembered Wembanyama as smart,
+        polite and gifted in French literature. He said he also had a calming
+        influence on the class.
       </p>
       <br />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, quod
-        quo nihil qui vitae, nesciunt sunt voluptate blanditiis, molestias
-        maiores atque! Exercitationem corrupti accusamus sit facere numquam
-        similique aut, aliquid, odio commodi rem id rerum asperiores consectetur
-        repudiandae porro sint delectus quisquam non vero provident placeat
-        nulla unde molestiae enim! Adipisci nisi veniam, doloribus dolore,
-        quidem temporibus vitae saepe, unde sapiente rerum quam. Rerum quas
-        placeat at necessitatibus quaerat cumque sit suscipit, numquam maiores
-        alias natus distinctio ad recusandae nesciunt. Possimus fugit architecto
-        consequatur, hic labore cum delectus quam rerum. Delectus hic soluta
-        ratione consectetur illo harum cupiditate. Odit natus minima, ut illum
-        nihil veritatis voluptatum. Culpa veniam magni ab quidem aliquam natus
-        laborum vel fugit quasi quaerat blanditiis aperiam eaque a officia cum
-        nemo, provident dolore architecto atque! Voluptas velit nulla natus ut.
-        Eum, facere facilis ipsum laborum, nobis sed, consequatur assumenda hic
-        eius nam aspernatur odio iure. Excepturi blanditiis quidem, vel quaerat
-        soluta doloribus ipsum deserunt, maxime sapiente ducimus iure ea in
-        aliquid! Dolores alias exercitationem laborum voluptates tempore vero
-        amet quae quisquam magnam, fuga iste sunt fugiat in repellendus a
-        voluptate odit officiis blanditiis doloremque excepturi! Voluptatibus
-        quam enim vitae, eum ullam commodi explicabo assumenda fugiat rerum!
+        “I answered the question, like, out loud, while being on my phone,
+        because I knew the answer,” Wembanyama said. “And I remember he was
+        like, ‘Thank you, Victor, but what are you doing?’” Wembanyama started
+        laughing as he finished telling the story. He had been a typical
+        teenager on that day, at least for a moment. But at 7-foot-3, he has
+        never really been typical, and perhaps he never will be. In eight
+        months, he will almost certainly be the top pick in the N.B.A. draft as
+        the most hyped teenager since LeBron James, who called him an “alien.”
+        His play and potential have drawn comparisons to Kareem Abdul-Jabbar,
+        Hakeem Olajuwon, Kevin Durant and Giannis Antetokounmpo. When Wembanyama
+        plays basketball, he does sometimes look otherworldly.
       </p>
 
       <br />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, obcaecati!
-        Neque repudiandae reprehenderit veniam earum minus deleniti est
-        doloremque aspernatur, quibusdam labore iusto rerum animi amet, nam
-        corporis voluptas. Magni blanditiis omnis dolores consequuntur
-        laudantium adipisci, at provident modi dicta quam itaque libero ipsa
-        reprehenderit nemo nisi alias! Ad dolor vitae blanditiis beatae sequi
-        molestias accusamus modi possimus pariatur nulla voluptates amet nisi
-        sapiente in aliquid quaerat rem quis unde ab delectus, ullam facilis
-        autem. Atque, molestias quae. Ab impedit eum veritatis ipsum hic sint
-        mollitia tempore rerum excepturi aliquam deleniti natus consequuntur
-        eius aspernatur dolorem facilis officia, quasi asperiores.Lorem ipsum
-        dolor, sit amet consectetur adipisicing elit. Ipsa corporis ducimus
-        facere architecto? Pariatur saepe tenetur, magni tempora soluta
-        voluptate tempore quas quam magnam odio quod delectus enim suscipit a
-        optio quidem quibusdam doloremque iure. Adipisci facere obcaecati
-        molestiae aliquam assumenda ipsam qui ratione rem sunt provident, vero
-        illo dolor cum veritatis maiores est nobis magnam atque sint fugit ab
-        suscipit nam? Obcaecati aut quis optio, facilis vel officia explicabo
-        dolorem dolorum soluta a officiis suscipit quam odio itaque repellat
-        porro praesentium nihil doloremque tempore eveniet nulla quod dicta
-        vitae doloribus! Voluptas omnis dignissimos magni dolorem distinctio,
-        pariatur aliquid consequuntur.
+        His height and his wingspan of about eight feet often make it seem as
+        though he’s in two places at once. He’s as smooth as a smaller player,
+        but he barely has to leave the ground to block shots or grab rebounds.
+        This month, dozens of scouts and N.B.A. team executives gathered in Las
+        Vegas to watch his French professional team, Metropolitans 92, play two
+        games against G League Ignite, the N.B.A.’s developmental team for top
+        prospects. Wembanyama’s team lost the first game, but he scored 37
+        points, including seven 3-pointers, and blocked five shots. Two days
+        later, Metropolitans 92 won the rematch; Wembanyama had 36 points, 11
+        rebounds, 4 assists and 4 blocks. “I’ve always felt like I was on a
+        different level,” Wembanyama said. “I was living a different life than
+        everyone else in school, for example, even in elementary school. I was
+        just thinking differently than everyone. I’ve always tried to be
+        original in everything I do, and it’s really something that stays in my
+        soul: Be original. Be one of a kind. It’s like, I can’t explain it. I
+        think I was born with it.” The people who knew Wembanyama growing up
+        sometimes affectionately joked that he was on his own planet. He was
+        playing for a youth basketball team in his hometown, Le Chesnay, west of
+        Paris, when Michaël Allard, a coach from a club in Nanterre, saw him in
+        what the coach called “a beautiful coincidence.” Allard thought the
+        10-year-old Wembanyama was an assistant coach because of his height,
+        though he soon took notice of more than that. “He’s competitive, he’s
+        joyful and he wants to play all the time,” Allard said in French. The
+        Nanterre club has both youth and professional teams. When Wembanyama was
+        13, he won his first French championship. He’d always loved basketball,
+        but that championship made him fall in love with winning. “I cried that
+        day,” Wembanyama said. “That was my first big title, so I was so happy.”
+        In middle school, Wembanyama began teaching himself English, knowing
+        that to play in the N.B.A. he would need proficiency beyond the little
+        he’d learned in school. He watched videos from American accounts on
+        Instagram, along with English-language television shows. As he entered
+        his teenage years, scouts and the news media began flocking to see him.
+        “It was when he was 14 that I said to myself, ‘This one, he has to go to
+        the N.B.A.,’” said Frédéric Donnadieu, speaking in French. Donnadieu was
+        Wembanyama’s first coach at Nanterre and is now the president of the
+        club. Wembanyama’s parents, Felix Wembanyama and Elodie de Fautereau,
+        tried to keep his life as normal as possible. They made sure he kept up
+        with his schoolwork. If he got bad grades, the coaches made him sit at
+        the wooden scorer’s table in the gym and do his homework instead of
+        practicing with his friends. “That annoyed him more than anything else,”
+        said Amine El Hajraoui, a coach at Nanterre.
       </p>
     </div>
     <br />
