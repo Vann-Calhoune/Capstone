@@ -42,7 +42,7 @@ export default state => html`
             <br />
             <p>
               Lebron James is on pace to surpass Kareem Abdul-Jabbar as the
-              NBA's
+              NB...
             </p>
           </div>
         </article>
