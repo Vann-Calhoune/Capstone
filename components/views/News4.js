@@ -1,11 +1,11 @@
 import html from "html-literal";
-import vic from "../../assets/Images/vicwemby.jpeg";
+import harden from "../../assets/Images/jh13.webp";
 
 export default state => html`
   <div class="completePage">
     <div class="fullBlog">
-      <h1 class="topPost">Is Wembanyama Worth It?</h1>
-      <img class="postPic" src="${vic}" />
+      <h1 class="topPost">Harden Loses 100 pounds</h1>
+      <img class="postPic" src="${harden}" />
       <br />
       <p>
         On a rainy fall afternoon in the Parisian suburb of Nanterre, François
