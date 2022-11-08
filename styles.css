@@ -143,7 +143,7 @@ margin: 5px;
   cursor: pointer;
 }
 
-#showPost {
+.showPost {
   text-decoration: none;
   color: black;
 }
@@ -246,17 +246,8 @@ footer {
 
  /* Post ******************* */
 
-/* #wembyPost {
-  margin: 80px;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid black;
-  max-width: 1000px;
 
-} */
-
-#vicPic {
+.postPic {
   border-radius: 10px 10px 0 0;
   /* align-items: center; */
 }
@@ -284,7 +275,7 @@ footer {
   width: 100px;
 }
 
-#topPost {
+.topPost {
   font-family: 'Bangers', cursive;
   font-size: 4vw;
   text-align: center;
@@ -292,7 +283,7 @@ footer {
 
 
 
-#completePage {
+.completePage {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -302,7 +293,7 @@ footer {
   align-items: center;
 }
 
-#commentArea {
+.commentArea {
   /* border: 1px solid black; */
   margin: 15px;
   padding: 15px;
@@ -312,7 +303,7 @@ footer {
   width: 90vw;
 }
 
-#fullBlog {
+.fullBlog {
   display: flex;
   flex-direction: column;
   margin: 25px;

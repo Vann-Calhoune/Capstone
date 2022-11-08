@@ -1,11 +1,11 @@
 import html from "html-literal";
-import vic from "../../assets/Images/vicwemby.jpeg";
+import snub from "../../assets/Images/snub.png";
 
 export default state => html`
   <div class="completePage">
     <div class="fullBlog">
-      <h1 class="topPost">Is Wembanyama Worth It?</h1>
-      <img class="postPic" src="${vic}" />
+      <h1 class="topPost">Snub of the Century</h1>
+      <img class="postPic" src="${snub}" />
       <br />
       <p>
         On a rainy fall afternoon in the Parisian suburb of Nanterre, François

@@ -1,11 +1,11 @@
 import html from "html-literal";
-import vic from "../../assets/Images/vicwemby.jpeg";
+import big3 from "../../assets/Images/wbig3.jpeg";
 
 export default state => html`
   <div class="completePage">
     <div class="fullBlog">
-      <h1 class="topPost">Is Wembanyama Worth It?</h1>
-      <img class="postPic" src="${vic}" />
+      <h1 class="topPost">Eyes on 5</h1>
+      <img class="postPic" src="${big3}" />
       <br />
       <p>
         On a rainy fall afternoon in the Parisian suburb of Nanterre, François

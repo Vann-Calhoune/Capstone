@@ -1,11 +1,11 @@
 import html from "html-literal";
-import vic from "../../assets/Images/vicwemby.jpeg";
+import galuka from "../../assets/Images/galuka.jpeg";
 
 export default state => html`
   <div class="completePage">
     <div class="fullBlog">
       <h1 class="topPost">Is Wembanyama Worth It?</h1>
-      <img class="postPic" src="${vic}" />
+      <img class="postPic" src="${galuka}" />
       <br />
       <p>
         On a rainy fall afternoon in the Parisian suburb of Nanterre, François

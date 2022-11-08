@@ -1,11 +1,11 @@
 import html from "html-literal";
-import vic from "../../assets/Images/vicwemby.jpeg";
+import lbj from "../../assets/Images/lbjkaj.jpeg";
 
 export default state => html`
   <div class="completePage">
     <div class="fullBlog">
-      <h1 class="topPost">Is Wembanyama Worth It?</h1>
-      <img class="postPic" src="${vic}" />
+      <h1 class="topPost">New #1</h1>
+      <img class="postPic" src="${lbj}" />
       <br />
       <p>
         On a rainy fall afternoon in the Parisian suburb of Nanterre, François
@@ -86,14 +86,15 @@ export default state => html`
       </p>
     </div>
     <br />
-    <form id="commentForm" method="POST" action="">
+    <!-- <form id="commentForm" method="POST" action="">
       <p>Leave a Comment!</p>
       <input id="name" type="text" required placeholder="Enter your name" />
       <textarea id="comment"></textarea>
       <input id="commentSubmit" type="submit" />
-    </form>
+    </form> -->
     <br />
-    <ul class="commentArea">
+    <!-- </div> -->
+    <!-- <ul class="commentArea">
       ${state.comments.map(comment => {
         return `<li><h3>${comment.name}</h3>
        ${comment.comment}</li>`;

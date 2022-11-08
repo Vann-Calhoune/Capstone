@@ -1,11 +1,11 @@
 import html from "html-literal";
-import vic from "../../assets/Images/vicwemby.jpeg";
+import Paolo from "../../assets/Images/paolo.jpeg";
 
 export default state => html`
   <div class="completePage">
     <div class="fullBlog">
-      <h1 class="topPost">Is Wembanyama Worth It?</h1>
-      <img class="postPic" src="${vic}" />
+      <h1 class="topPost">Number 1 pick</h1>
+      <img class="postPic" src="${Paolo}" />
       <br />
       <p>
         On a rainy fall afternoon in the Parisian suburb of Nanterre, François

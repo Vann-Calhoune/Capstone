@@ -121,8 +121,6 @@ function afterRender(state) {
       // saving user player search
       store.Compare.name = document.getElementById("player1").value;
       store.Compare.name2 = document.getElementById("player2").value;
-      console.log(`new value ${store.Compare.name}`);
-      console.log(`new value ${store.Compare.name2}`);
       store.Compare.season = document.getElementById("playerOneYear").value;
       store.Compare.season2 = document.getElementById("playerTwoYear").value;
 
