@@ -1,5 +1,5 @@
 import html from "html-literal";
-import big3 from "../../assets/Images/wbig3.jpeg";
+import big3 from "../../assets/Images/Wbig3.jpeg";
 
 export default state => html`
   <div class="completePage">
