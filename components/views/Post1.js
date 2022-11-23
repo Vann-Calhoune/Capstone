@@ -7,6 +7,9 @@ export default state => html`
       <h1 class="topPost">Is Wembanyama Worth It?</h1>
       <img class="postPic" src="${vic}" />
       <br />
+      <div class="progress">
+        <div class="color"></div>
+      </div>
       <p>
         On a rainy fall afternoon in the Parisian suburb of Nanterre, François
         Salaün sat outside a cafe in a suit taking drags from a vape pen. He
