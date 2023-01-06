@@ -6,8 +6,6 @@
 
 }
 
-
-
 :root {
   --gold-color : #FBC403;
 }
@@ -94,7 +92,7 @@ header {
 
  .fas {
    position: absolute;
-   top: 30px;
+   top: 40px;
  }
 
  .fas:hover {
@@ -169,7 +167,6 @@ h2 {
 .blog {
   display: grid;
   height: 100vh;
-
   overflow: scroll;
   grid-template-columns: 1fr;
   grid-template-areas: "main"
@@ -182,6 +179,18 @@ h2 {
                           "main main main sidebar";}
 }
 
+@media(max-width: 550px) {
+  .articles {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+
+
+  }
+
+
+}
 .postImage {
   max-height: 300px;
   max-width: 300px;
@@ -456,7 +465,20 @@ max-width: 1200px;
 
   @media (max-width: 550px) {
     .rankZones {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .playerIcons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    ::placeholder {
+      font-size: small;
+      text-align: center;
     }
   }
 
@@ -580,6 +602,13 @@ td {
 .inputData {
   text-align: center;
 }
+
+@media (max-width: 550px) {
+  #submit1 {
+    font-size: 16px;
+  }
+}
+
 
 /* end Compare */
 
