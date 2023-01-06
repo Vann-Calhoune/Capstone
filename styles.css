@@ -326,6 +326,16 @@ max-width: 1200px;
 
 }
 
+@media(max-width: 550px) {
+  ::placeholder {
+    font-size: medium;
+  }
+
+  #name {
+    width: 30vw;
+  }
+}
+
  /* end post */
 
 /* rank ********************* */
