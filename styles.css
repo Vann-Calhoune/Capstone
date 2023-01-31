@@ -288,7 +288,7 @@ footer {
 
 .topPost {
   font-family: 'Bangers', cursive;
-  font-size: 4vw;
+  font-size: 50px;
   text-align: center;
 }
 
@@ -299,8 +299,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   /* border: 1px solid black; */
-  margin: 50px;
-  padding: 30px;
+  /* margin: 50px; */
+  /* padding: 30px; */
   align-items: center;
 }
 
@@ -321,14 +321,17 @@ footer {
   padding: 10px;
   padding-top: 0px;
   margin-top: 0px;
-  /* border: 1px solid black; */
-max-width: 1200px;
+  max-width: 1200px;
 
 }
 
 @media(max-width: 550px) {
   ::placeholder {
     font-size: medium;
+  }
+
+  .topPost {
+    font-size: 30px;
   }
 
   #name {
